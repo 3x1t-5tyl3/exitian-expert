@@ -1,4 +1,4 @@
-*/
+*
 !/config
 !/crash-reports
 !/defaultconfigs
@@ -6,14 +6,7 @@
 !/minemenu
 !/modpack-assets
 !/scripts
-!/resourcepacks/ExitianExpertOverrides
+!/resourcepacks
 !/schematics
 !/simple-rpc
 !minecraftinstance.json
-usercache.json
-patchouli_data.json
-reauth.toml
-registry.dump
-simple-rpc.bak
-usernamecache.json
-waila_handlers.md
