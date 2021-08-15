@@ -1,62 +1,118 @@
 name: Bug Report
-description: File a bug report
-title: "[Bug]: "
+description: Something isn't working correctly
 labels: [Bug]
-assignees:
-  -
 body:
   - type: markdown
+    id: introduction
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Describe the bug?
+      description: A clear and concise description of what the bug is?
+    validations:
+      required: true
+  - type: textarea
+    id: relevant-issues
+    attributes:
+      label: Relevant issues
+      description: Did you find any existing issues relevant to this one? If you found the same issue, please contribute to that one instead of making a duplicate.?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: log-files
+    attributes:
+      label: Log Files
+      description: Include log files from affected session or information on where to obtain them (e.g. sent over Discord). DO NOT extract only parts of the logs, please always include whole log files as they contain important context.
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots or a video to help explain your problem. DO NOT use screenshots or video in place of description of the problem and replication steps though.?
+    validations:
+      required: false
+  - type: dropdown
+    id: occurrence
+    attributes:
+      label: How often does it happen?
+      options:
+        - "Sometimes"
+        - "Always"
+        - "Only Once"
     validations:
       required: true
   - type: dropdown
+    id: repetition
+    attributes:
+      label: Does the bug persist after restarting Neos?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: input
     id: version
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: Neos Version Number
+      placeholder: 1.2.3?
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: platforms
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What Platforms does this occur on?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
+        - "Windows"
+        - "Linux"
+        - "Android / Quest"
+    validations:
+      required: true
+  - type: input
+    id: reproduction-items
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: Link to Reproduction Item/World
+      description: Optional, but can speed up response for more complex reproduction cases
+  - type: dropdown
+    id: regression
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Did this work before?
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - "Yes"
+        - "No"
+        - "I Don't Know"
+    validations:
+      required: true
+  - type: input
+    id: regression-version
+    attributes:
+      label: If it worked before, on which build?
+      placeholder: 1.2.3?
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
+  - type: textarea
+    id: reporters
+    attributes:
+      label: Reporters
+      description: Usernames / Discord handles of anyone (including yourself) who has reported/replicated this bug (will be used to credit in release notes).
