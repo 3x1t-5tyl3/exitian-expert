@@ -1,0 +1,54 @@
+
+[server]
+	#Stack limit of first dank storage
+	#Range: > 1
+	stacklimit1 = 512
+	#Stack limit of second dank storage
+	#Range: > 1
+	stacklimit2 = 2048
+	#Stack limit of third dank storage
+	#Range: > 1
+	stacklimit3 = 8192
+	#Stack limit of fourth dank storage
+	#Range: > 1
+	stacklimit4 = 32768
+	#Stack limit of fifth dank storage
+	#Range: > 1
+	stacklimit5 = 262144
+	#Stack limit of sixth dank storage
+	#Range: > 1
+	stacklimit6 = 1048576
+	#Stack limit of seventh dank storage
+	#Range: > 1
+	stacklimit7 = 2147483647
+	#Tags that are eligible for conversion, input as a list of resourcelocation, eg 'forge:ingots/iron'
+	"convertible tags" = [
+		"forge:ores/copper",
+		"forge:ores/lead",
+		"forge:ores/ruby", 
+		"forge:ores/silver",
+		"forge:ores/tin",
+		"forge:ores/zinc",
+		"forge:ores/bismuth",
+		"forge:ores/nickel",
+		"forge:ores/coal",
+		"forge:ores/diamond",
+		"forge:ores/emerald",
+		"forge:ores/gold",
+		"forge:ores/iron",
+		"forge:ores/lapis",
+		"forge:ores/redstone",
+		"forge:gems/amethyst",
+		"forge:gems/peridot",
+		"forge:gems/ruby",
+		"forge:ingots/copper",
+		"forge:ingots/lead",
+		"forge:ingots/nickel",
+		"forge:ingots/silver",
+		"forge:ingots/tin",
+		"forge:ingots/iron",
+		"forge:ingots/gold",
+		]
+	#Use Share Tag instead of full NBT to reduce the chance of NBT oversending causing clients to be disconnected.  Warning: this will cause the Dank
+	#Storage to wipe it's items in Creative Mode.  There is nothing I can do about this as it is a vanilla bug.
+	useShareTag = false

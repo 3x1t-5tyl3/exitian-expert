@@ -1,0 +1,371 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 8/7/21 7:50 PM
+Description: Exception in server tick loop
+
+net.minecraftforge.fml.config.ConfigFileTypeHandler$ConfigLoadingException: Failed loading config file unified_resources-server.toml of type SERVER for modid unified_resources
+	at net.minecraftforge.fml.config.ConfigFileTypeHandler.lambda$reader$1(ConfigFileTypeHandler.java:61) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.config.ConfigFileTypeHandler$$Lambda$18685/681969195.apply(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.fml.config.ConfigTracker.openConfig(ConfigTracker.java:104) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.config.ConfigTracker.lambda$loadConfigs$1(ConfigTracker.java:83) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.config.ConfigTracker$$Lambda$18684/255804040.accept(Unknown Source) ~[?:?] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:1.8.0_51] {}
+	at java.util.Collections$SynchronizedCollection.forEach(Collections.java:2062) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.config.ConfigTracker.loadConfigs(ConfigTracker.java:83) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerLifecycleHooks.handleServerAboutToStart(ServerLifecycleHooks.java:94) ~[?:?] {re:classloading}
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:59) ~[?:?] {re:mixin,pl:runtimedistcleaner:A,re:classloading,pl:mixin:APP:notenoughcrashes.mixins.json:client.MixinIntegratedServer,pl:mixin:APP:smoothboot.mixins.json:client.IntegratedServerMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:621) [?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,xf:fml:artisantools:MinecraftServer#func_240772_a_,pl:mixin:APP:mixin.terraforged.json:common.MixinMinecraftServer,pl:mixin:APP:kubejs-common.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:232) [?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,xf:fml:artisantools:MinecraftServer#func_240772_a_,pl:mixin:APP:mixin.terraforged.json:common.MixinMinecraftServer,pl:mixin:APP:kubejs-common.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer$$Lambda$26920/1403707530.run(Unknown Source) [?:?] {}
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51] {}
+Caused by: com.electronwill.nightconfig.core.io.ParsingException: Invalid value fals - Expected the boolean value false.
+	at com.electronwill.nightconfig.toml.ValueParser.parseFalse(ValueParser.java:166) ~[toml-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.toml.ValueParser.parse(ValueParser.java:48) ~[toml-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.toml.ValueParser.parse(ValueParser.java:68) ~[toml-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.toml.TableParser.parseNormal(TableParser.java:57) ~[toml-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:44) ~[toml-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.toml.TomlParser.parse(TomlParser.java:37) ~[toml-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:113) ~[core-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:219) ~[core-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.core.io.ConfigParser.parse(ConfigParser.java:202) ~[core-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.core.file.WriteSyncFileConfig.load(WriteSyncFileConfig.java:73) ~[core-3.6.3.jar:?] {}
+	at com.electronwill.nightconfig.core.file.AutosaveCommentedFileConfig.load(AutosaveCommentedFileConfig.java:85) ~[core-3.6.3.jar:?] {}
+	at net.minecraftforge.fml.config.ConfigFileTypeHandler.lambda$reader$1(ConfigFileTypeHandler.java:57) ~[?:?] {re:classloading}
+	... 13 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2867092664 bytes (2734 MB) / 4880596992 bytes (4654 MB) up to 11453595648 bytes (10923 MB)
+	CPUs: 12
+	JVM Flags: 5 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx12288m -Xms256m -XX:PermSize=256m
+	ModLauncher: 8.0.9+86+master.3cf110c
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.2.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.2.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.2.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.2.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.2.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.2
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+		kotlinforforge@1.14.0
+		kotori_scala@2.13.5-build-2
+		scorge@3.1.3
+	Mod List: 
+		BetterDungeons-1.16.4-1.1.jar                     |YUNG's Better Dungeons        |betterdungeons                |1.16.4-1.1          |DONE      |Manifest: NOSIGNATURE
+		ftb-essentials-1605.1.4-build.13.jar              |FTB Essentials                |ftbessentials                 |1605.1.4-build.13   |DONE      |Manifest: NOSIGNATURE
+		supermartijn642configlib-1.0.9-mc1.16.jar         |SuperMartijn642's Config Lib  |supermartijn642configlib      |1.0.9               |DONE      |Manifest: NOSIGNATURE
+		simplemagnets-1.1.2-mc1.16.5.jar                  |Simple Magnets                |simplemagnets                 |1.1.2               |DONE      |Manifest: NOSIGNATURE
+		IntegratedTerminals-1.16.5-1.2.4.jar              |IntegratedTerminals           |integratedterminals           |1.2.4               |DONE      |Manifest: NOSIGNATURE
+		Uppers-0.3.2.jar                                  |Uppers                        |uppers                        |0.3.2               |DONE      |Manifest: NOSIGNATURE
+		JAVD-2.5.45+mc-1.16.5.jar                         |Just Another Void Dim         |javd                          |2.5.45+mc-1.16.5    |DONE      |Manifest: 23:8f:95:0f:65:ec:2e:38:99:79:f4:bc:47:8a:0b:df:29:ef:2d:82:66:20:09:20:02:dc:4a:15:97:45:f8:43
+		ContentTweaker-1.16-1.0.0.develop.19.jar          |ContentTweaker                |contenttweaker                |1.0.0.develop.19    |DONE      |Manifest: NOSIGNATURE
+		SilentMechanisms-1.16.3-1.0.1+77.jar              |Silent's Mechanisms           |silents_mechanisms            |1.0.1+77            |DONE      |Manifest: NOSIGNATURE
+		woodenhopper-1.1.0-1.16.2+.jar                    |Wooden Hopper                 |woodenhopper                  |1.1.0-1.16.2+       |DONE      |Manifest: NOSIGNATURE
+		noautojump-1.16.4-1.jar                           |No Auto-Jump                  |noautojump                    |1.16.4-1            |DONE      |Manifest: NOSIGNATURE
+		IronJetpacks-1.16.5-4.2.1.jar                     |Iron Jetpacks                 |ironjetpacks                  |4.2.1               |DONE      |Manifest: NOSIGNATURE
+		BetterCaves-Forge-1.16.4-1.1.2.jar                |YUNG's Better Caves           |bettercaves                   |1.16.4-1.1.2        |DONE      |Manifest: NOSIGNATURE
+		CTM-MC1.16.1-1.1.2.6.jar                          |ConnectedTexturesMod          |ctm                           |MC1.16.1-1.1.2.6    |DONE      |Manifest: NOSIGNATURE
+		artisanworktables-2.0.1.jar                       |Artisan Worktables            |artisanworktables             |2.0.1               |DONE      |Manifest: NOSIGNATURE
+		ReAuth-1.16-Forge-3.9.3.jar                       |ReAuth                        |reauth                        |3.9.3               |DONE      |Manifest: 3d:06:1e:e5:da:e2:ff:ae:04:00:be:45:5b:ff:fd:70:65:00:67:0b:33:87:a6:5f:af:20:3c:b6:a1:35:ca:7e
+		YungsApi-1.16.4-Forge-12.jar                      |YUNG's API                    |yungsapi                      |1.16.4-Forge-12     |DONE      |Manifest: NOSIGNATURE
+		Powah-1.16.5-2.3.16.jar                           |Powah                         |powah                         |2.3.16              |DONE      |Manifest: NOSIGNATURE
+		rangedpumps-0.8.2.jar                             |Ranged Pumps                  |rangedpumps                   |0.8.2               |DONE      |Manifest: NOSIGNATURE
+		ColouredTooltips-1.16.5-11.0.2.jar                |ColouredTooltips              |colouredtooltips              |11.0.2              |DONE      |Manifest: NOSIGNATURE
+		Wither-Skeleton-Tweaks-1.16.4-5.3.0.jar           |Wither Skeleton Tweaks        |wstweaks                      |5.3.0               |DONE      |Manifest: NOSIGNATURE
+		reliquary-1.16.5-1.3.5.1100.jar                   |Reliquary                     |xreliquary                    |1.16.5-1.3.5.1100   |DONE      |Manifest: NOSIGNATURE
+		randompatches-2.4.4-forge.jar                     |RandomPatches                 |randompatches                 |2.4.4-forge         |DONE      |Manifest: 92:f6:29:d4:09:89:f5:f5:98:5e:20:34:31:d0:7b:58:22:06:bd:a5:d1:6a:92:6e:ac:3d:8d:18:c5:b2:5b:d7
+		Apotheosis-1.16.4-4.6.1.jar                       |Apotheosis                    |apotheosis                    |4.6.1               |DONE      |Manifest: NOSIGNATURE
+		Morpheus-1.16.5-4.2.70.jar                        |Morpheus                      |morpheus                      |4.2.70              |DONE      |Manifest: NOSIGNATURE
+		proxy-0.10.0.2-mc1.16.5.jar                       |Proxy                         |proxy                         |0.10.0.2            |DONE      |Manifest: NOSIGNATURE
+		TMechworks-1.16.3+-2.2.5.jar                      |Tinkers' Mechworks            |tmechworks                    |2.2.5               |DONE      |Manifest: NOSIGNATURE
+		JustEnoughResources-1.16.5-0.12.1.127.jar         |Just Enough Resources         |jeresources                   |0.12.1.127          |DONE      |Manifest: NOSIGNATURE
+		shetiphiancore-1.16-3.8.5.jar                     |ShetiPhian-Core               |shetiphiancore                |3.8.5               |DONE      |Manifest: NOSIGNATURE
+		durabilitytooltip-1.0.0-mc1.16.jar                |durabilitytooltip             |durabilitytooltip             |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		industrial-foregoing-1.16.5-3.2.14.3-9.jar        |Industrial Foregoing          |industrialforegoing           |3.2.14.3            |DONE      |Manifest: NOSIGNATURE
+		torchmaster-2.3.7.jar                             |Torchmaster                   |torchmaster                   |2.3.7               |DONE      |Manifest: NOSIGNATURE
+		TipTheScales-1.16.5-3.0.0.15.jar                  |TipTheScales                  |tipthescales                  |3.0.0.15            |DONE      |Manifest: NOSIGNATURE
+		ExtendedItemInformation-3.0.1-1.16.5.jar          |Extended Item Information     |eii                           |3.0.1-1.16.5        |DONE      |Manifest: NOSIGNATURE
+		BiomesOPlenty-1.16.5-13.1.0.477-universal.jar     |Biomes O' Plenty              |biomesoplenty                 |1.16.5-13.1.0.477   |DONE      |Manifest: NOSIGNATURE
+		silent-gear-1.16.5-2.6.30.jar                     |Silent Gear                   |silentgear                    |2.6.30              |DONE      |Manifest: NOSIGNATURE
+		supermartijn642corelib-1.0.12-mc1.16.5.jar        |SuperMartijn642's Core Lib    |supermartijn642corelib        |1.0.12              |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.16.5-4.0.5.2.jar                   |Curios API                    |curios                        |1.16.5-4.0.5.2      |DONE      |Manifest: NOSIGNATURE
+		Unique Enchantments-1.16.5-2.0.1.jar              |Unique Enchantments           |uniquee                       |1.9.0               |DONE      |Manifest: NOSIGNATURE
+		Unique Enchantments Utils-1.16.5-1.3.jar          |Unique Util Enchantments      |uniqueutil                    |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		Measurements-1.16.5-1.1.jar                       |Measurements                  |measurements                  |1.1                 |DONE      |Manifest: NOSIGNATURE
+		YungsExtras-Forge-1.16.4-1.0.jar                  |YUNG's Extras                 |yungsextras                   |Forge-1.16.4-1.0    |DONE      |Manifest: NOSIGNATURE
+		tanknull-2.3-1.16.4.jar                           |Tank Null                     |tanknull                      |2.3-1.16.4          |DONE      |Manifest: NOSIGNATURE
+		angelring-1.16.5-1.3.4.1.jar                      |Angel Ring                    |angelring                     |1.3.4.1             |DONE      |Manifest: NOSIGNATURE
+		tombstone-1.16-6.4.7.jar                          |Corail Tombstone              |tombstone                     |6.4.7               |DONE      |Manifest: NOSIGNATURE
+		constructionwand-1.16.5-2.2.jar                   |Construction Wand             |constructionwand              |1.16.5-2.2          |DONE      |Manifest: NOSIGNATURE
+		biomeinfo-1.16.5-v1.3.1.jar                       |BiomeInfo                     |biomeinfo                     |v1.3.1              |DONE      |Manifest: NOSIGNATURE
+		cloth-config-4.11.26-forge.jar                    |Cloth Config v4 API           |cloth-config                  |4.11.26             |DONE      |Manifest: NOSIGNATURE
+		nbtperipheral-1.0.jar                             |NBT Peripheral, addition for C|nbtperipheral                 |1.0                 |DONE      |Manifest: NOSIGNATURE
+		FastLeafDecay-v25.jar                             |FastLeafDecay                 |fastleafdecay                 |v25                 |DONE      |Manifest: NOSIGNATURE
+		CodeChickenLib-1.16.5-4.0.2.429-universal.jar     |CodeChicken Lib               |codechickenlib                |4.0.2.429           |DONE      |Manifest: 31:e6:db:63:47:4a:6e:e0:0a:2c:11:d1:76:db:4e:82:ff:56:2d:29:93:d2:e5:02:bd:d3:bd:9d:27:47:a5:71
+		CBMultipart-1.16.5-3.0.2.119-universal.jar        |CBMultipart                   |cb_multipart                  |3.0.2.119           |DONE      |Manifest: 31:e6:db:63:47:4a:6e:e0:0a:2c:11:d1:76:db:4e:82:ff:56:2d:29:93:d2:e5:02:bd:d3:bd:9d:27:47:a5:71
+		ProjectRed-1.16.5-4.10.0-core.jar                 |ProjectRed Core               |projectred-core               |4.10.0              |DONE      |Manifest: NOSIGNATURE
+		ProjectRed-1.16.5-4.10.0-exploration.jar          |ProjectRed Exploration        |projectred-exploration        |4.10.0              |DONE      |Manifest: NOSIGNATURE
+		ProjectRed-1.16.5-4.10.0-integration.jar          |ProjectRed Integration        |projectred-integration        |4.10.0              |DONE      |Manifest: NOSIGNATURE
+		BetterMineshafts-Forge-1.16.4-2.0.4.jar           |YUNG's Better Mineshafts      |bettermineshafts              |1.16.4-2.0.4        |DONE      |Manifest: NOSIGNATURE
+		QuarkOddities-1.16.3.jar                          |Quark Oddities                |quarkoddities                 |1.16.3              |DONE      |Manifest: NOSIGNATURE
+		miniutilities-1.1.3.jar                           |Mini Utilities                |miniutilities                 |1.1.3               |DONE      |Manifest: NOSIGNATURE
+		ClientTweaks_1.16.3-5.3.0.jar                     |Client Tweaks                 |clienttweaks                  |5.3.0               |DONE      |Manifest: NOSIGNATURE
+		woot-1.16.5-1.0.8.0.jar                           |Woot                          |woot                          |1.16.5-1.0.8.0      |DONE      |Manifest: NOSIGNATURE
+		jei-1.16.5-7.7.1.118.jar                          |Just Enough Items             |jei                           |7.7.1.118           |DONE      |Manifest: NOSIGNATURE
+		AttributeFix-1.16.5-10.1.2.jar                    |AttributeFix                  |attributefix                  |10.1.2              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		Mekanism-1.16.5-10.0.21.448.jar                   |Mekanism                      |mekanism                      |10.0.21             |DONE      |Manifest: NOSIGNATURE
+		caelus-forge-1.16.5-2.1.3.1.jar                   |Caelus API                    |caelus                        |1.16.5-2.1.3.1      |DONE      |Manifest: NOSIGNATURE
+		lemonlib-1.3.6.jar                                |Lemon Lib                     |lemonlib                      |1.3.6               |DONE      |Manifest: NOSIGNATURE
+		bdlib-1.17.1.11-mc1.16.5.jar                      |BdLib                         |bdlib                         |1.17.1.11           |DONE      |Manifest: NOSIGNATURE
+		invtweaks-1.16.4-1.0.1.jar                        |Inventory Tweaks Renewed      |invtweaks                     |1.16.4-1.0.1        |DONE      |Manifest: NOSIGNATURE
+		PassableFoliage-1.16.5-2.2.1.jar                  |Passable Foliage              |passablefoliage               |2.2.1               |DONE      |Manifest: NOSIGNATURE
+		sweetconcrete-1.16.5-1.7.2.jar                    |Sweet Concrete                |sweetconcrete                 |1.16.3-1.7.2        |DONE      |Manifest: NOSIGNATURE
+		NaturesCompass-1.16.5-1.9.1-forge.jar             |Nature's Compass              |naturescompass                |1.16.5-1.9.1-forge  |DONE      |Manifest: NOSIGNATURE
+		SereneSeasons-1.16.5-4.0.1.120-universal.jar      |Serene Seasons                |sereneseasons                 |1.16.5-4.0.1.119    |DONE      |Manifest: NOSIGNATURE
+		LibX-1.16.3-1.0.76.jar                            |LibX                          |libx                          |1.16.3-1.0.76       |DONE      |Manifest: NOSIGNATURE
+		compactmachines-4.0.0-beta.2.jar                  |Compact Machines 4            |compactmachines               |4.0.0-beta.2        |DONE      |Manifest: NOSIGNATURE
+		engineerstools-1.16.4-1.1.5.jar                   |Engineer's Tools              |engineerstools                |1.1.5               |DONE      |Manifest: bf:30:76:97:e4:58:41:61:2a:f4:30:d3:8f:4c:e3:71:1d:14:c4:a1:4e:85:36:e3:1d:aa:2f:cb:22:b0:04:9b
+		FarmingForBlockheads_1.16.5-7.3.1.jar             |Farming for Blockheads        |farmingforblockheads          |7.3.1               |DONE      |Manifest: NOSIGNATURE
+		athenaeum-2.0.0.jar                               |Athenaeum                     |athenaeum                     |NONE                |DONE      |Manifest: NOSIGNATURE
+		SimpleSplashScreen-1.16.5-1.1.jar                 |Simple Splash Screen          |simplesplashscreen            |1.1                 |DONE      |Manifest: dd:0a:96:b4:f9:bb:d2:dc:b5:ce:e1:35:50:7e:dd:f9:c2:b6:b6:2c:49:3c:a5:0d:39:7c:bb:ea:13:00:dc:8d
+		JEITweaker-1.16.5-1.0.1.34.jar                    |JEI Tweaker                   |jeitweaker                    |1.0.1.34            |DONE      |Manifest: NOSIGNATURE
+		CraftTweaker-1.16.5-7.1.0.371.jar                 |CraftTweaker                  |crafttweaker                  |7.1.0.371           |DONE      |Manifest: NOSIGNATURE
+		ImmersivePetroleum-1.16.5-3.3.0-5.jar             |Immersive Petroleum           |immersivepetroleum            |3.3.0-5             |DONE      |Manifest: NOSIGNATURE
+		inzheFoPCore-v.1.2.0.jar                          |inzheFoPs Core                |inzhefopcore                  |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		DynamicSurroundings-1.16.4-4.0.4.2.jar            |§3Dynamic Surroundings        |dsurround                     |1.16.4-4.0.4.2      |DONE      |Manifest: b4:98:14:b9:76:55:25:4f:e5:5f:4d:71:90:87:43:5b:f9:d5:3a:02:60:42:5e:da:1f:15:9c:ff:be:a9:7c:77
+		ironchest-1.16.5-11.2.13.jar                      |Iron Chests                   |ironchest                     |1.16.5-11.2.13      |DONE      |Manifest: NOSIGNATURE
+		IntegratedCrafting-1.16.5-1.0.17.jar              |IntegratedCrafting            |integratedcrafting            |1.0.17              |DONE      |Manifest: NOSIGNATURE
+		ZeroCore2-1.16.4-2.0.21.jar                       |Zero CORE 2                   |zerocore                      |1.16.4-2.0.21       |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.2-client.jar                    |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: NOSIGNATURE
+		integratedadditions-1.1.3.jar                     |IntegratedAdditions           |integratedadditions           |1.1.3               |DONE      |Manifest: NOSIGNATURE
+		MouseTweaks-2.14-mc1.16.2.jar                     |Mouse Tweaks                  |mousetweaks                   |2.14                |DONE      |Manifest: NOSIGNATURE
+		ImmersiveEngineering-1.16.5-5.0.2-137.jar         |Immersive Engineering         |immersiveengineering          |1.16.5-5.0.2-137    |DONE      |Manifest: 44:39:94:cf:1d:8c:be:3c:7f:a9:ee:f4:1e:63:a5:ac:61:f9:c2:87:d5:5b:d9:d6:8c:b5:3e:96:5d:8e:3f:b7
+		pamhc2crops-1.16.3-1.0.2.jar                      |Pam's HarvestCraft 2 Crops    |pamhc2crops                   |version             |DONE      |Manifest: NOSIGNATURE
+		EmendatusEnigmatica-1.16.5-1.2.9.jar              |Emendatus Enigmatica          |emendatusenigmatica           |1.16.5-1.2.9        |DONE      |Manifest: NOSIGNATURE
+		Ding-1.16.5-1.3.0.jar                             |Ding                          |ding                          |1.3.0               |DONE      |Manifest: NOSIGNATURE
+		MasterfulMachinery-1.16.5-0.1.52-B671.jar         |Masterful Machinery           |masterfulmachinery            |1.16.5-0.1.52-B671  |DONE      |Manifest: NOSIGNATURE
+		CreateTweaker-1.0.0.18.jar                        |CreateTweaker                 |createtweaker                 |1.0.0.18            |DONE      |Manifest: NOSIGNATURE
+		jeiintegration_1.16.5-7.0.1.15.jar                |JEI Integration               |jeiintegration                |7.0.1.15            |DONE      |Manifest: NOSIGNATURE
+		flywheel-1.16-0.2.2.jar                           |Flywheel                      |flywheel                      |1.16-0.2.2          |DONE      |Manifest: NOSIGNATURE
+		Mantle-1.16.5-1.6.115.jar                         |Mantle                        |mantle                        |1.6.115             |DONE      |Manifest: NOSIGNATURE
+		Xaeros_Minimap_21.14.1_Forge_1.16.5.jar           |Xaero's Minimap               |xaerominimap                  |21.14.1             |DONE      |Manifest: NOSIGNATURE
+		redstonequit-1.16.4-3.0.0.0.jar                   |Redstone Quit                 |redstonequit                  |1.16.4-3.0.0.0      |DONE      |Manifest: NOSIGNATURE
+		IntegratedDynamics-1.16.5-1.9.2.jar               |IntegratedDynamics            |integrateddynamics            |1.9.2               |DONE      |Manifest: NOSIGNATURE
+		integratednbt-1.16.4-1.4.2.jar                    |Integrated NBT                |integratednbt                 |version             |DONE      |Manifest: NOSIGNATURE
+		pamhc2foodcore-1.16.3-1.0.2.jar                   |Pam's HarvestCraft 2 Food Core|pamhc2foodcore                |version             |DONE      |Manifest: NOSIGNATURE
+		itemcollectors-1.1.2-mc1.16.5.jar                 |Item Collectors               |itemcollectors                |1.1.2               |DONE      |Manifest: NOSIGNATURE
+		ftb-backups-2.1.1.6.jar                           |FTB Backups                   |ftbbackups                    |2.1.1.6             |DONE      |Manifest: NOSIGNATURE
+		polymorph-forge-1.16.5-0.25.jar                   |Polymorph                     |polymorph                     |1.16.5-0.25         |DONE      |Manifest: NOSIGNATURE
+		AutoRegLib-1.6-49.jar                             |AutoRegLib                    |autoreglib                    |1.6-49              |DONE      |Manifest: NOSIGNATURE
+		torcherino-14.0.0+1.16.4.jar                      |Torcherino                    |torcherino                    |14.0.0              |DONE      |Manifest: NOSIGNATURE
+		entityculling-1.0.2.jar                           |EntityCulling                 |entityculling                 |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		quickstack-4.0.1.jar                              |DropOff                       |dropoff                       |4.0.1               |DONE      |Manifest: NOSIGNATURE
+		FastFurnace-1.16.4-4.4.0.jar                      |FastFurnace                   |fastfurnace                   |4.4.0               |DONE      |Manifest: NOSIGNATURE
+		ModernUI-1.16.5-2.5.1.86-universal.jar            |Modern UI                     |modernui                      |2.5.1.86            |DONE      |Manifest: 72:da:aa:fa:02:98:8b:71:b7:c5:ce:aa:0f:0d:cb:a3:ac:4b:97:d4:bc:fa:58:e6:98:e1:2e:ca:f4:61:a2:b0
+		MineMenu-1.16.4-1.8.7.jar                         |MineMenu                      |minemenu                      |1.16.4-1.8.7        |DONE      |Manifest: NOSIGNATURE
+		extremeSoundMuffler-3.13-1.16.5.jar               |Extreme Sound Muffler         |extremesoundmuffler           |3_forge-1.16.5      |DONE      |Manifest: NOSIGNATURE
+		CosmeticArmorReworked-1.16.5-v4.jar               |CosmeticArmorReworked         |cosmeticarmorreworked         |1.16.5-v4           |DONE      |Manifest: 5e:ed:25:99:e4:44:14:c0:dd:89:c1:a9:4c:10:b5:0d:e4:b1:52:50:45:82:13:d8:d0:32:89:67:56:57:01:53
+		step-1.16.4-1.1.0.jar                             |Step                          |step                          |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		xptome-1.16.5-v2.1.2.jar                          |XP Tome                       |xpbook                        |v2.1.2              |DONE      |Manifest: NOSIGNATURE
+		DefaultOptions_1.16.5-12.2.1.jar                  |Default Options               |defaultoptions                |12.2.1              |DONE      |Manifest: NOSIGNATURE
+		enchantedbookredesign-3.3-1.16.4.jar              |Enchanted Book Redesign       |enchantedbookredesign         |3.3-1.16.4          |DONE      |Manifest: NOSIGNATURE
+		CyclopsCore-1.16.5-1.11.8.jar                     |Cyclops Core                  |cyclopscore                   |1.11.8              |DONE      |Manifest: NOSIGNATURE
+		notenoughcrashes-3.2.0-forge.jar                  |Not Enough Crashes            |notenoughcrashes              |3.2.0               |DONE      |Manifest: NOSIGNATURE
+		NetherPortalFix_1.16.3-7.2.1.jar                  |NetherPortalFix               |netherportalfix               |7.2.1               |DONE      |Manifest: NOSIGNATURE
+		advancedperipherals-0.6r.jar                      |Advanced Peripherals          |advancedperipherals           |0.6r                |DONE      |Manifest: NOSIGNATURE
+		JustEnoughCalculation-1.16.5-3.8.2.jar            |Just Enough Calculation       |jecalculation                 |3.8.2               |DONE      |Manifest: NOSIGNATURE
+		ExtendedCrafting-1.16.4-3.1.6.jar                 |Extended Crafting             |extendedcrafting              |3.1.6               |DONE      |Manifest: NOSIGNATURE
+		dynamiclights-1.16.5.1.jar                        |Dynamic Lights                |dynamiclights                 |1.16.5.1            |DONE      |Manifest: NOSIGNATURE
+		findme-1.16.3-2.2.0.0.jar                         |Find Me                       |findme                        |2.2.0               |DONE      |Manifest: NOSIGNATURE
+		TerraForged-1.16.5-0.2.14.jar                     |TerraForged                   |terraforged                   |0.2.14              |DONE      |Manifest: 7b:73:d0:a2:c3:40:13:84:35:4f:c9:0e:2b:85:8c:08:ea:3c:3c:eb:f1:98:8b:5b:6e:ca:8a:a0:9a:cf:12:b3
+		CookingForBlockheads_1.16.5-9.3.3.jar             |Cooking for Blockheads        |cookingforblockheads          |9.3.3               |DONE      |Manifest: NOSIGNATURE
+		Placebo-1.16.4-4.5.0.jar                          |Placebo                       |placebo                       |4.5.0               |DONE      |Manifest: NOSIGNATURE
+		dankstorage-3.16.jar                              |Dank Storage                  |dankstorage                   |3.16                |DONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.16.5-10.2.27.jar                |Bookshelf                     |bookshelf                     |10.2.27             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		DarkUtilities-1.16.5-8.0.10.jar                   |Dark Utilities                |darkutils                     |8.0.10              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		BetterDrowning-1.16.5-2.0.2.jar                   |BetterDrowning                |betterdrowning                |2.0.2               |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		BotanyPots-1.16.5-7.0.17.jar                      |BotanyPots                    |botanypots                    |7.0.17              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		BotanyTrees-1.16.5-3.0.5.jar                      |BotanyTrees                   |botanytrees                   |3.0.5               |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		Tips-1.16.5-4.0.7.jar                             |Tips                          |tips                          |4.0.7               |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		sophisticatedbackpacks-1.16.5-3.0.3.297.jar       |Sophisticated Backpacks       |sophisticatedbackpacks        |1.16.5-3.0.3.297    |DONE      |Manifest: NOSIGNATURE
+		u_team_core-1.16.5-3.2.1.196.jar                  |U Team Core                   |uteamcore                     |3.2.1.196           |DONE      |Manifest: f4:a6:0b:ee:cb:8a:1a:ea:9f:9d:45:91:8f:8b:b3:ae:26:f3:bf:05:86:1d:90:9e:f6:32:2a:1a:ed:1d:ce:b0
+		ProjectRed-1.16.5-4.10.0-illumination.jar         |ProjectRed Illumination       |projectred-illumination       |4.10.0              |DONE      |Manifest: NOSIGNATURE
+		buildinggadgets-1.16.5-3.8.0.jar                  |Building Gadgets              |buildinggadgets               |3.8.0               |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.2-universal.jar                 |Forge                         |forge                         |36.2.2              |DONE      |Manifest: 22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		Ceramics-1.16.5-1.6.3.jar                         |Ceramics                      |ceramics                      |1.6.3               |DONE      |Manifest: NOSIGNATURE
+		cofh_core-1.16.5-1.3.1.jar                        |CoFH Core                     |cofh_core                     |1.3.1               |DONE      |Manifest: NOSIGNATURE
+		thermal_foundation-1.16.5-1.3.2.jar               |Thermal Series                |thermal                       |1.3.2               |DONE      |Manifest: NOSIGNATURE
+		thermal_innovation-1.16.5-1.3.0.jar               |Thermal Innovation            |thermal_innovation            |1.3.0               |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_locomotion-1.16.5-1.3.0.jar               |Thermal Locomotion            |thermal_locomotion            |1.3.0               |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		plonk-1.16.5-9.0.8.jar                            |Plonk                         |plonk                         |9.0.8               |DONE      |Manifest: NOSIGNATURE
+		thermal_cultivation-1.16.5-1.3.0.jar              |Thermal Cultivation           |thermal_cultivation           |1.3.0               |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		appleskin-forge-mc1.16.x-2.1.0.jar                |AppleSkin                     |appleskin                     |mc1.16.4-2.1.0      |DONE      |Manifest: NOSIGNATURE
+		LightingWand-1.16.4-1.8.0.jar                     |Lighting Wand                 |lightingwand                  |1.8.0               |DONE      |Manifest: NOSIGNATURE
+		MekanismGenerators-1.16.5-10.0.21.448.jar         |Mekanism: Generators          |mekanismgenerators            |10.0.21             |DONE      |Manifest: NOSIGNATURE
+		carryon-1.16.5-1.15.5.15.jar                      |Carry On                      |carryon                       |1.15.5.15           |DONE      |Manifest: 8c:03:ac:7d:21:62:65:e2:83:91:f3:22:57:99:ed:75:78:1e:db:de:03:99:ef:53:3b:59:95:18:01:bc:84:a9
+		XNetGases-1.16.5-2.2.6.jar                        |XNet Gases                    |xnetgases                     |2.2.6               |DONE      |Manifest: NOSIGNATURE
+		MmmMmmMmmMmm-1.16.5-1.2.0.jar                     |MmmMmmMmmMmm                  |dummmmmmy                     |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		mob_grinding_utils-1.16.5-0.4.23.jar              |Mob Grinding Utils            |mob_grinding_utils            |1.16.5-0.4.23       |DONE      |Manifest: NOSIGNATURE
+		konkrete_1.1.6_MC_1.16.2-1.16.5.jar               |Konkrete                      |konkrete                      |1.1.6               |DONE      |Manifest: NOSIGNATURE
+		w2w-1.16.1-0.0.5.2.jar                            |w2w                           |w2w                           |NONE                |DONE      |Manifest: NOSIGNATURE
+		OreTweaker-1.16.5-2.3.1.jar                       |Ore Tweaker                   |oretweaker                    |2.3.1               |DONE      |Manifest: NOSIGNATURE
+		createplus-1.16.4_v0.3.2.1.jar                    |Create Plus                   |createplus                    |1.16.4_v0.3.2.1     |DONE      |Manifest: NOSIGNATURE
+		FarmersDelight-1.16.5-0.4.5.jar                   |Farmer's Delight              |farmersdelight                |1.16.5-0.4.5        |DONE      |Manifest: NOSIGNATURE
+		justenoughkeys-forge-0.2.1.jar                    |Just Enough Items             |justenoughkeys                |0.2.1               |DONE      |Manifest: NOSIGNATURE
+		useful_backpacks-1.16.5-1.12.1.90.jar             |Useful Backpacks              |usefulbackpacks               |1.12.1.90           |DONE      |Manifest: f4:a6:0b:ee:cb:8a:1a:ea:9f:9d:45:91:8f:8b:b3:ae:26:f3:bf:05:86:1d:90:9e:f6:32:2a:1a:ed:1d:ce:b0
+		entangled-1.3.6-mc1.16.5.jar                      |Entangled                     |entangled                     |1.3.6               |DONE      |Manifest: NOSIGNATURE
+		endertanks-1.16-1.9.5.jar                         |EnderTanks                    |endertanks                    |1.9.5               |DONE      |Manifest: NOSIGNATURE
+		CommonCapabilities-1.16.5-2.7.0.jar               |CommonCapabilities            |commoncapabilities            |2.7.0               |DONE      |Manifest: NOSIGNATURE
+		Compressium-1.16.5-1.2.2.jar                      |Compressium                   |compressium                   |1.2.2               |DONE      |Manifest: NOSIGNATURE
+		finallyfarmabledyes-1.16.4-1.2.0.1.jar            |Finally Farmable Dyes         |finallyfarmabledyes           |1.2.0.1             |DONE      |Manifest: NOSIGNATURE
+		MekanismAdditions-1.16.5-10.0.21.448.jar          |Mekanism: Additions           |mekanismadditions             |10.0.21             |DONE      |Manifest: NOSIGNATURE
+		valkyrielib-1.16.5-3.0.9.2.jar                    |ValkyrieLib                   |valkyrielib                   |1.16.5-3.0.9.2      |DONE      |Manifest: NOSIGNATURE
+		envirocore-1.16.5-3.0.9.1.jar                     |Environmental Core            |envirocore                    |1.16.5-3.0.9.1      |DONE      |Manifest: NOSIGNATURE
+		envirotech-1.16.5-3.0.9.3.jar                     |Environmental Tech            |envirotech                    |1.16.5-3.0.9.3      |DONE      |Manifest: NOSIGNATURE
+		Lollipop-1.16.5-3.2.9.jar                         |Lollipop                      |lollipop                      |3.2.9               |DONE      |Manifest: NOSIGNATURE
+		artisantools-2.1.0.jar                            |Artisan Tools                 |artisantools                  |2.1.0-1-g9462e4e    |DONE      |Manifest: NOSIGNATURE
+		pamhc2foodextended-1.16.3-1.0.2.jar               |Pam's HarvestCraft 2 Food Exte|pamhc2foodextended            |version             |DONE      |Manifest: NOSIGNATURE
+		SolarFluxReborn-1.16.3-16.2.5.jar                 |Solar Flux Reborn             |solarflux                     |16.2.5              |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.16.4-53.1.jar                         |Patchouli                     |patchouli                     |1.16.4-53.1         |DONE      |Manifest: NOSIGNATURE
+		UnifiedResources-1.16.5-1.0.2.jar                 |Unified Resources             |unified_resources             |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		betterbiomeblend-1.16.4-1.2.7-forge.jar           |Better Biome Blend            |betterbiomeblend              |1.16.4-1.2.7-forge  |DONE      |Manifest: NOSIGNATURE
+		OreExcavation-1.8.157.jar                         |Ore Excavation                |oreexcavation                 |1.8.157             |DONE      |Manifest: e7:68:1c:0d:b9:7e:cf:f8:f3:40:9c:84:c5:39:d7:a4:59:78:b0:6b:c3:fd:b7:4f:69:18:a3:88:e3:76:8c:3f
+		time-in-a-bottle-1.1.0.jar                        |Time In A Bottle              |tiab                          |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		ProjectRed-1.16.5-4.10.0-transmission.jar         |ProjectRed Transmission       |projectred-transmission       |4.10.0              |DONE      |Manifest: NOSIGNATURE
+		blockcarpentry-1.16-0.3.6.jar                     |BlockCarpentry                |blockcarpentry                |1.16-0.3.6          |DONE      |Manifest: NOSIGNATURE
+		thermal_expansion-1.16.5-1.3.0.jar                |Thermal Expansion             |thermal_expansion             |1.3.0               |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		IntegratedTunnels-1.16.5-1.8.5.jar                |IntegratedTunnels             |integratedtunnels             |1.8.5               |DONE      |Manifest: NOSIGNATURE
+		elevatorid-1.16.5-1.7.13.jar                      |Elevator Mod                  |elevatorid                    |1.16.5-1.7.13       |DONE      |Manifest: NOSIGNATURE
+		GunpowderLib-1.16.5-1.2.2.jar                     |GunpowderLib                  |gunpowderlib                  |1.16.5-1.2.2        |DONE      |Manifest: 2e:cb:db:61:22:2a:6d:79:f4:22:31:8c:34:9b:cf:9f:91:ea:95:c4:bf:bb:8a:de:6e:10:c3:f0:b1:c6:ae:20
+		BetterStrongholds-1.16.4-1.2.1.jar                |YUNG's Better Strongholds     |betterstrongholds             |1.16.4-1.2.1        |DONE      |Manifest: NOSIGNATURE
+		WirelessRedstone-1.16.5-1.1.1.jar                 |Wireless Redstone             |wirelessredstone              |1.16.5-1.1.1        |DONE      |Manifest: NOSIGNATURE
+		Runelic-1.16.5-7.0.1.jar                          |Runelic                       |runelic                       |7.0.1               |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		MekanismTools-1.16.5-10.0.21.448.jar              |Mekanism: Tools               |mekanismtools                 |10.0.21             |DONE      |Manifest: NOSIGNATURE
+		architectury-1.20.29-forge.jar                    |Architectury                  |architectury                  |1.20.29             |DONE      |Manifest: NOSIGNATURE
+		ftb-library-forge-1605.3.1-build.58.jar           |FTB Library                   |ftblibrary                    |1605.3.1-build.58   |DONE      |Manifest: NOSIGNATURE
+		ftb-teams-forge-1605.2.1-build.20.jar             |FTB Teams                     |ftbteams                      |1605.2.1-build.20   |DONE      |Manifest: NOSIGNATURE
+		curiouselytra-forge-1.16.5-4.0.2.3.jar            |Curious Elytra                |curiouselytra                 |1.16.5-4.0.2.3      |DONE      |Manifest: NOSIGNATURE
+		cc-tweaked-1.16.5-1.98.1.jar                      |CC: Tweaked                   |computercraft                 |1.98.1              |DONE      |Manifest: NOSIGNATURE
+		AI-Improvements-1.16.2-0.3.0.jar                  |AI-Improvements               |aiimprovements                |0.3.0               |DONE      |Manifest: NOSIGNATURE
+		ExtremeReactors2-1.16.4-2.0.23.jar                |Extreme Reactors 2            |bigreactors                   |1.16.4-2.0.23       |DONE      |Manifest: NOSIGNATURE
+		compactcrafting-1.0.0-beta.3.jar                  |Compact Crafting              |compactcrafting               |1.0.0-beta.3        |DONE      |Manifest: NOSIGNATURE
+		light-overlay-5.8.1.jar                           |Light Overlay                 |lightoverlay                  |5.8.1               |DONE      |Manifest: NOSIGNATURE
+		trashcans-1.0.10-mc1.16.5.jar                     |Trash Cans                    |trashcans                     |1.0.10              |DONE      |Manifest: NOSIGNATURE
+		InventoryEssentials_1.16.5-2.3.2.jar              |Inventory Essentials          |inventoryessentials           |2.3.2               |DONE      |Manifest: NOSIGNATURE
+		bwncr-1.16.4-3.9.16.jar                           |Bad Wither No Cookie Reloaded |bwncr                         |1.16.4-3.9.16       |DONE      |Manifest: NOSIGNATURE
+		PortableCraftingTable-1.16.5-1.1.0.jar            |Portable Crafting Table       |portablecraftingtable         |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		GameMenuModOption-1.16.4-1.8.jar                  |Game Menu Mod Option          |gamemenumodoption             |1.8                 |DONE      |Manifest: NOSIGNATURE
+		Cyclic-1.16.5-1.3.5.jar                           |Cyclic                        |cyclic                        |1.16.5-1.3.5        |DONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		BetterAdvancements-1.16.5-0.1.1.115.jar           |Better Advancements           |betteradvancements            |0.1.1.115           |DONE      |Manifest: NOSIGNATURE
+		HudCompass-1.16.5-0.1.5.jar                       |HUD Compass                   |hudcompass                    |version             |DONE      |Manifest: NOSIGNATURE
+		rhino-1605.1.1-build.21.jar                       |Rhino                         |rhino                         |1605.1.1-build.21   |DONE      |Manifest: NOSIGNATURE
+		Cucumber-1.16.4-4.1.10.jar                        |Cucumber Library              |cucumber                      |4.1.10              |DONE      |Manifest: NOSIGNATURE
+		TrashSlot_1.16.3-12.2.1.jar                       |TrashSlot                     |trashslot                     |12.2.1              |DONE      |Manifest: NOSIGNATURE
+		InventorySpam-1.16.5-1.3.2.jar                    |Inventory Spam                |inventoryspam                 |1.3.2               |DONE      |Manifest: NOSIGNATURE
+		pamhc2trees-1.16.3-1.0.1.jar                      |Pam's HarvestCraft 2 Fruit Tre|pamhc2trees                   |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		craftingstation-4.1.1.jar                         |Crafting Station              |craftingstation               |4.1.1               |DONE      |Manifest: NOSIGNATURE
+		snad-1.0.8-1.16.jar                               |Snad                          |snad                          |1.0.8               |DONE      |Manifest: NOSIGNATURE
+		item-filters-forge-1605.2.5-build.9.jar           |Item Filters                  |itemfilters                   |1605.2.5-build.9    |DONE      |Manifest: NOSIGNATURE
+		Scannable-MC1.16.5-Forge-1.7.4+21.jar             |Scannable                     |scannable                     |1.7.4+21            |DONE      |Manifest: NOSIGNATURE
+		ae2extras-1.3-1.16.5.jar                          |AE2 Extras                    |ae2extras                     |1.3-1.16.5          |DONE      |Manifest: NOSIGNATURE
+		ensorcellation-1.16.5-1.3.1.jar                   |Ensorcellation                |ensorcellation                |1.3.1               |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		create-mc1.16.5_v0.3.2c.jar                       |Create                        |create                        |v0.3.2c for 1.16.5  |DONE      |Manifest: NOSIGNATURE
+		Waystones_1.16.5-7.6.2.jar                        |Waystones                     |waystones                     |7.6.2               |DONE      |Manifest: NOSIGNATURE
+		Clumps-6.0.0.25.jar                               |Clumps                        |clumps                        |6.0.0.25            |DONE      |Manifest: NOSIGNATURE
+		ModPaste.jar                                      |Mod List Paster               |modlistpaste                  |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		enviromats-1.16.5-2.0.9.0.jar                     |Environmental Materials       |enviromats                    |2.0.9.0             |DONE      |Manifest: NOSIGNATURE
+		appliedenergistics2-8.4.0.jar                     |Applied Energistics 2         |appliedenergistics2           |8.4.0               |DONE      |Manifest: 95:58:cc:83:9d:a8:fa:4f:e9:f3:54:90:66:61:c8:ae:9c:08:88:11:52:52:df:2d:28:5f:05:d8:28:57:0f:98
+		lazierae2-1.16.5-1.1.4.jar                        |LazierAE2                     |lazierae2                     |1.1.4               |DONE      |Manifest: NOSIGNATURE
+		Storage4ComputerCraft-1.16.5-1.3.0.jar            |Storage for ComputerCraft     |storage4computercraft         |1.3.0               |DONE      |Manifest: NOSIGNATURE
+		SimpleStorageNetwork-1.16.5-1.4.0.jar             |Simple Storage Network        |storagenetwork                |1.16.5-1.4.0        |DONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		configured-1.1.0-1.16.5.jar                       |Configured                    |configured                    |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		worldtime-1.16.5-forge36.0.14-1.3.1.jar           |World Time                    |worldtime                     |1.16.5-forge36.0.14-|DONE      |Manifest: NOSIGNATURE
+		daylightdimension_1.16.5-0.0.3.jar                |Daylight Dimension            |daylightdimension             |0.0.3               |DONE      |Manifest: NOSIGNATURE
+		charginggadgets-1.3.0.jar                         |Charging Gadgets              |charginggadgets               |1.3.0               |DONE      |Manifest: NOSIGNATURE
+		demagnetize-forge-1.16.2-1.2.2.jar                |Demagnetize                   |demagnetize                   |1.16.2-1.2.2        |DONE      |Manifest: NOSIGNATURE
+		TravelAnchors-2.4.jar                             |Travel Anchors                |travel_anchors                |2.4                 |DONE      |Manifest: NOSIGNATURE
+		lazydfu-0.1.3.jar                                 |LazyDFU                       |lazydfu                       |0.1.3               |DONE      |Manifest: NOSIGNATURE
+		mcjtylib-1.16-5.0.22.jar                          |McJtyLib                      |mcjtylib                      |1.16-5.0.22         |DONE      |Manifest: NOSIGNATURE
+		rftoolsbase-1.16-2.0.11.jar                       |RFToolsBase                   |rftoolsbase                   |1.16-2.0.11         |DONE      |Manifest: NOSIGNATURE
+		xnet-1.16-3.0.13.jar                              |XNet                          |xnet                          |1.16-3.0.13         |DONE      |Manifest: NOSIGNATURE
+		rftoolsdim-1.16-7.0.11-beta.jar                   |RFToolsDimensions             |rftoolsdim                    |1.16-7.0.11-beta    |DONE      |Manifest: NOSIGNATURE
+		rftoolscontrol-1.16-4.0.11.jar                    |RFToolsControl                |rftoolscontrol                |1.16-4.0.11         |DONE      |Manifest: NOSIGNATURE
+		ExplorersCompass-1.16.5-1.1.2-forge.jar           |Explorer's Compass            |explorerscompass              |1.16.5-1.1.2-forge  |DONE      |Manifest: NOSIGNATURE
+		PackagedExCrafting-1.16.5-2.0.0.1.jar             |PackagedExCrafting            |packagedexcrafting            |2.0.0.1             |DONE      |Manifest: NOSIGNATURE
+		Interactio-1.16.4-3.1.1.jar                       |Interactio                    |interactio                    |1.16.4-3.1.1        |DONE      |Manifest: NOSIGNATURE
+		Toast-Control-1.16.4-4.3.1.jar                    |Toast Control                 |toastcontrol                  |4.3.1               |DONE      |Manifest: NOSIGNATURE
+		traverse-1.16.4-0.4.3.8.jar                       |Traverse: Reforged            |traverse                      |1.16.4-0.4.3.8      |DONE      |Manifest: NOSIGNATURE
+		EnderStorage-1.16.5-2.8.0.168-universal.jar       |EnderStorage                  |enderstorage                  |2.8.0.168           |DONE      |Manifest: 31:e6:db:63:47:4a:6e:e0:0a:2c:11:d1:76:db:4e:82:ff:56:2d:29:93:d2:e5:02:bd:d3:bd:9d:27:47:a5:71
+		AkashicTome-1.4-16.jar                            |Akashic Tome                  |akashictome                   |1.4-16              |DONE      |Manifest: NOSIGNATURE
+		ftb-chunks-forge-1605.3.1-build.41.jar            |FTB Chunks                    |ftbchunks                     |1605.3.1-build.41   |DONE      |Manifest: NOSIGNATURE
+		kubejs-forge-1605.3.14-build.60.jar               |KubeJS                        |kubejs                        |1605.3.14-build.60  |DONE      |Manifest: NOSIGNATURE
+		kubejs-thermal-1605.1.3-build.1.jar               |KubeJS Thermal                |kubejs_thermal                |1605.1.3-build.1    |DONE      |Manifest: NOSIGNATURE
+		ftb-quests-forge-1605.3.3-build.49.jar            |FTB Quests                    |ftbquests                     |1605.3.3-build.49   |DONE      |Manifest: NOSIGNATURE
+		kubejs-create-1605.1.2-build.7.jar                |KubeJS Create                 |kubejs_create                 |1605.1.2-build.7    |DONE      |Manifest: NOSIGNATURE
+		kubejs-mekanism-1604.1.1.6.jar                    |KubeJS Mekanism               |kubejs_mekanism               |1604.1.1.6          |DONE      |Manifest: NOSIGNATURE
+		mekajs-1.2.0.jar                                  |MekaJS                        |mekajs                        |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		MiniCoal2-1.16.1-0.0.2-universal.jar              |MiniCoal 2                    |minicoal2                     |{{version}}         |DONE      |Manifest: NOSIGNATURE
+		ColossalChests-1.16.4-1.7.13.jar                  |ColossalChests                |colossalchests                |1.7.13              |DONE      |Manifest: NOSIGNATURE
+		sounddeviceoptions-1.4.2.jar                      |Sound Device Options          |sounddeviceoptions            |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		CraftingTweaks_1.16.5-12.2.1.jar                  |Crafting Tweaks               |craftingtweaks                |12.2.1              |DONE      |Manifest: NOSIGNATURE
+		itlt-1.16.x-2.0.0.jar                             |It's The Little Things        |itlt                          |2.0.0               |DONE      |Manifest: NOSIGNATURE
+		EnchantmentDescriptions-1.16.5-7.0.12.jar         |EnchantmentDescriptions       |enchdesc                      |7.0.12              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		swingthroughgrass-1.16.4-1.5.3.jar                |SwingThroughGrass             |swingthroughgrass             |1.16.4-1.5.3        |DONE      |Manifest: NOSIGNATURE
+		ToolBelt-1.16.5-1.16.0.jar                        |Tool Belt                     |toolbelt                      |1.16.0              |DONE      |Manifest: NOSIGNATURE
+		titanium-1.16.5-3.2.8.4-10.jar                    |Titanium                      |titanium                      |3.2.8.4             |DONE      |Manifest: NOSIGNATURE
+		silent-lib-1.16.3-4.9.6.jar                       |Silent Lib                    |silentlib                     |4.9.6               |DONE      |Manifest: NOSIGNATURE
+		Jade-1.16.4-2.7.2.jar                             |Jade                          |jade                          |2.7.2               |DONE      |Manifest: NOSIGNATURE
+		Exchangers-1.16.5-3.0.2.jar                       |Exchangers                    |exchangers                    |1.16.5-3.0.2        |DONE      |Manifest: 2e:cb:db:61:22:2a:6d:79:f4:22:31:8c:34:9b:cf:9f:91:ea:95:c4:bf:bb:8a:de:6e:10:c3:f0:b1:c6:ae:20
+		theplopper-1.16.2-v1.3.1.jar                      |The Plopper                   |theplopper                    |v1.3.1              |DONE      |Manifest: NOSIGNATURE
+		simple-rpc-1.16.5-2.2.1-all.jar                   |Simple RPC                    |simple-rpc                    |1.16.5-version      |DONE      |Manifest: NOSIGNATURE
+		PackagedAuto-1.16.5-2.0.0.3.jar                   |PackagedAuto                  |packagedauto                  |2.0.0.3             |DONE      |Manifest: NOSIGNATURE
+		smoothboot-forge-1.16.4-1.2.2.jar                 |Smooth Boot                   |smoothboot                    |1.16.4-1.2.2        |DONE      |Manifest: NOSIGNATURE
+		defaultworldtype-1.16.3-2.0.2.jar                 |Default World Type            |defaultworldtype              |2.0.2               |DONE      |Manifest: NOSIGNATURE
+		Dimensional-Paintings-1.16.5-1.0.1.jar            |Dimensional Paintings         |dimpaintings                  |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		Quark-r2.4-316.jar                                |Quark                         |quark                         |r2.4-316            |DONE      |Manifest: NOSIGNATURE
+		notreepunching-forge-1.16.5-4.2.2.jar             |No Tree Punching              |notreepunching                |4.2.2               |DONE      |Manifest: NOSIGNATURE
+		diet-forge-1.16.5-0.38.jar                        |Diet                          |diet                          |1.16.5-0.38         |DONE      |Manifest: NOSIGNATURE
+		FastWorkbench-1.16.4-4.5.1.jar                    |FastWorkbench                 |fastbench                     |4.5.1               |DONE      |Manifest: NOSIGNATURE
+		StorageDrawers-1.16.3-8.3.0.jar                   |Storage Drawers               |storagedrawers                |8.3.0               |DONE      |Manifest: NOSIGNATURE
+		FluxNetworks-1.16.5-6.1.7.12.jar                  |Flux Networks                 |fluxnetworks                  |6.1.7.12            |DONE      |Manifest: NOSIGNATURE
+		enderchests-1.16-1.7.7.jar                        |EnderChests                   |enderchests                   |1.7.7               |DONE      |Manifest: NOSIGNATURE
+		fogoverrides-1.16.5-1.1.0.jar                     |Fog Overrides                 |fogoverrides                  |1.16.5-1.1.0        |DONE      |Manifest: NOSIGNATURE
+		ScreenshotToClipboard-1.15.1-1.0.5.jar            |Screenshot to Clipboard       |screenshotclipboard           |1.15.1-1.0.5        |DONE      |Manifest: NOSIGNATURE
+		fancymenu_2.2.1_MC_1.16.2-1.16.5.jar              |FancyMenu                     |fancymenu                     |2.2.1               |DONE      |Manifest: NOSIGNATURE
+		AppliedEnergisticsTweaker-1.0.0.14.jar            |Applied Energistics Tweaker   |appliedenergisticstweaker     |1.0.0.14            |DONE      |Manifest: NOSIGNATURE
+		World Stripper-1.16.5-2.1.0.jar                   |World Stripper                |worldstripper                 |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		ferritecore-2.0.5-forge.jar                       |Ferrite Core                  |ferritecore                   |2.0.5               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		Chisel-MC1.16.5-2.0.1-alpha.4.jar                 |Chisel                        |chisel                        |MC1.16.5-2.0.1-alpha|DONE      |Manifest: NOSIGNATURE
+		SoL-Carrot-1.16.5-1.10.0.jar                      |Spice of Life: Carrot Edition |solcarrot                     |1.16.5-1.10.0       |DONE      |Manifest: NOSIGNATURE
+		overloadedarmorbar-5.1.0.jar                      |Overloaded Armor Bar          |overloadedarmorbar            |5.1.0               |DONE      |Manifest: NOSIGNATURE
+		chiselsandbits-0.3.4-RELEASE.jar                  |Chisels & bits                |chiselsandbits                |NONE                |DONE      |Manifest: NOSIGNATURE
+		Morph-o-Tool-1.4-27.jar                           |Morph-o-Tool                  |morphtool                     |1.4-27              |DONE      |Manifest: NOSIGNATURE
+		Translocators-1.16.5-2.6.0.82-universal.jar       |Translocators                 |translocators                 |2.6.0.82            |DONE      |Manifest: 31:e6:db:63:47:4a:6e:e0:0a:2c:11:d1:76:db:4e:82:ff:56:2d:29:93:d2:e5:02:bd:d3:bd:9d:27:47:a5:71
+		OpenLoader-1.16.5-9.0.3.jar                       |OpenLoader                    |openloader                    |9.0.3               |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		BetterFoliage-2.7.1-Forge-1.16.5.jar              |Better Foliage                |betterfoliage                 |2.7.1               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: f6303281-3c35-4551-ad90-ebc267c5f195
+	Patchouli open book context: n/a
+	Suspected Mods: Unknown
+	Player Count: 0 / 8; []
+	Data Packs: vanilla, mod:betterdungeons, mod:ftbessentials, mod:supermartijn642configlib, mod:simplemagnets, mod:integratedterminals, mod:uppers (incompatible), mod:javd (incompatible), mod:contenttweaker, mod:silents_mechanisms (incompatible), mod:woodenhopper (incompatible), mod:noautojump (incompatible), mod:ironjetpacks, mod:bettercaves (incompatible), mod:ctm (incompatible), mod:artisanworktables, mod:reauth, mod:yungsapi, mod:powah, mod:rangedpumps, mod:colouredtooltips, mod:wstweaks (incompatible), mod:xreliquary, mod:randompatches, mod:apotheosis (incompatible), mod:morpheus (incompatible), mod:proxy, mod:tmechworks (incompatible), mod:jeresources, mod:shetiphiancore, mod:durabilitytooltip, mod:industrialforegoing (incompatible), mod:torchmaster (incompatible), mod:tipthescales, mod:eii (incompatible), mod:biomesoplenty, mod:silentgear, mod:supermartijn642corelib, mod:curios, mod:uniquee (incompatible), mod:uniqueutil (incompatible), mod:measurements, mod:yungsextras, mod:tanknull (incompatible), mod:angelring (incompatible), mod:tombstone, mod:constructionwand (incompatible), mod:biomeinfo, mod:cloth-config (incompatible), mod:nbtperipheral, mod:fastleafdecay (incompatible), mod:codechickenlib (incompatible), mod:cb_multipart (incompatible), mod:projectred-core (incompatible), mod:projectred-exploration (incompatible), mod:projectred-integration (incompatible), mod:bettermineshafts, mod:quarkoddities (incompatible), mod:miniutilities, mod:clienttweaks (incompatible), mod:woot, mod:jei, mod:attributefix, mod:mekanism, mod:caelus, mod:lemonlib, mod:bdlib, mod:invtweaks (incompatible), mod:passablefoliage, mod:sweetconcrete (incompatible), mod:naturescompass (incompatible), mod:sereneseasons, mod:libx, mod:compactmachines, mod:engineerstools, mod:farmingforblockheads (incompatible), mod:athenaeum, mod:simplesplashscreen, mod:jeitweaker, mod:crafttweaker, mod:immersivepetroleum, mod:inzhefopcore, mod:dsurround, mod:ironchest, mod:integratedcrafting, mod:zerocore, mod:integratedadditions, mod:mousetweaks, mod:immersiveengineering, mod:pamhc2crops (incompatible), mod:emendatusenigmatica, mod:masterfulmachinery, mod:createtweaker, mod:jeiintegration, mod:flywheel, mod:mantle (incompatible), mod:xaerominimap, mod:redstonequit (incompatible), mod:integrateddynamics, mod:integratednbt (incompatible), mod:pamhc2foodcore (incompatible), mod:itemcollectors, mod:ftbbackups (incompatible), mod:polymorph, mod:autoreglib (incompatible), mod:torcherino, mod:entityculling, mod:dropoff (incompatible), mod:fastfurnace (incompatible), mod:modernui, mod:minemenu, mod:extremesoundmuffler, mod:cosmeticarmorreworked (incompatible), mod:step (incompatible), mod:xpbook, mod:defaultoptions (incompatible), mod:enchantedbookredesign (incompatible), mod:cyclopscore, mod:notenoughcrashes, mod:netherportalfix (incompatible), mod:advancedperipherals, mod:jecalculation (incompatible), mod:extendedcrafting, mod:dynamiclights, mod:findme (incompatible), mod:terraforged, mod:cookingforblockheads (incompatible), mod:placebo (incompatible), mod:dankstorage, mod:bookshelf, mod:darkutils (incompatible), mod:betterdrowning (incompatible), mod:botanypots, mod:botanytrees, mod:tips, mod:sophisticatedbackpacks, mod:uteamcore, mod:projectred-illumination (incompatible), mod:buildinggadgets, mod:forge, mod:ceramics (incompatible), mod:cofh_core (incompatible), mod:thermal (incompatible), mod:thermal_innovation (incompatible), mod:thermal_locomotion (incompatible), mod:plonk (incompatible), mod:thermal_cultivation (incompatible), mod:appleskin, mod:lightingwand, mod:mekanismgenerators, mod:carryon, mod:xnetgases, mod:dummmmmmy (incompatible), mod:mob_grinding_utils, mod:konkrete, mod:w2w (incompatible), mod:oretweaker, mod:createplus, mod:farmersdelight, mod:justenoughkeys, mod:usefulbackpacks, mod:entangled, mod:endertanks, mod:commoncapabilities, mod:compressium (incompatible), mod:finallyfarmabledyes (incompatible), mod:mekanismadditions, mod:valkyrielib, mod:envirocore (incompatible), mod:envirotech, mod:lollipop, mod:artisantools, mod:pamhc2foodextended (incompatible), mod:solarflux, mod:patchouli (incompatible), mod:unified_resources, mod:betterbiomeblend, mod:oreexcavation, mod:tiab, mod:projectred-transmission (incompatible), mod:blockcarpentry (incompatible), mod:thermal_expansion (incompatible), mod:integratedtunnels, mod:elevatorid, mod:gunpowderlib, mod:betterstrongholds, mod:wirelessredstone, mod:runelic, mod:mekanismtools, mod:architectury, mod:ftblibrary, mod:ftbteams, mod:curiouselytra, mod:computercraft, mod:aiimprovements, mod:bigreactors, mod:compactcrafting (incompatible), mod:lightoverlay (incompatible), mod:trashcans, mod:inventoryessentials (incompatible), mod:bwncr (incompatible), mod:portablecraftingtable, mod:gamemenumodoption, mod:cyclic (incompatible), mod:betteradvancements, mod:hudcompass (incompatible), mod:rhino, mod:cucumber, mod:trashslot (incompatible), mod:inventoryspam (incompatible), mod:pamhc2trees (incompatible), mod:craftingstation (incompatible), mod:snad, mod:itemfilters, mod:scannable (incompatible), mod:ae2extras (incompatible), mod:ensorcellation (incompatible), mod:create, mod:waystones (incompatible), mod:clumps, mod:modlistpaste, mod:enviromats (incompatible), mod:appliedenergistics2 (incompatible), mod:lazierae2, mod:storage4computercraft, mod:storagenetwork, mod:configured, mod:worldtime (incompatible), mod:daylightdimension, mod:charginggadgets, mod:demagnetize (incompatible), mod:travel_anchors, mod:lazydfu, mod:mcjtylib, mod:rftoolsbase, mod:xnet, mod:rftoolsdim, mod:rftoolscontrol, mod:explorerscompass, mod:packagedexcrafting (incompatible), mod:interactio, mod:toastcontrol (incompatible), mod:traverse (incompatible), mod:enderstorage (incompatible), mod:akashictome, mod:ftbchunks, mod:kubejs, mod:kubejs_thermal, mod:ftbquests, mod:kubejs_create, mod:kubejs_mekanism, mod:mekajs (incompatible), mod:minicoal2 (incompatible), mod:colossalchests, mod:sounddeviceoptions (incompatible), mod:craftingtweaks (incompatible), mod:itlt, mod:enchdesc, mod:swingthroughgrass (incompatible), mod:toolbelt (incompatible), mod:titanium (incompatible), mod:silentlib (incompatible), mod:jade, mod:exchangers, mod:theplopper, mod:simple-rpc, mod:packagedauto (incompatible), mod:smoothboot, mod:defaultworldtype, mod:dimpaintings, mod:quark (incompatible), mod:notreepunching, mod:diet, mod:fastbench (incompatible), mod:storagedrawers (incompatible), mod:fluxnetworks, mod:enderchests, mod:fogoverrides (incompatible), mod:screenshotclipboard (incompatible), mod:fancymenu (incompatible), mod:appliedenergisticstweaker, mod:worldstripper, mod:ferritecore (incompatible), mod:chisel (incompatible), mod:solcarrot, mod:overloadedarmorbar (incompatible), mod:chiselsandbits (incompatible), mod:morphtool (incompatible), mod:translocators (incompatible), mod:openloader, mod:betterfoliage (incompatible), file/datapack, mm_resource, openloader/data/contenttweaker, mod:ding
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

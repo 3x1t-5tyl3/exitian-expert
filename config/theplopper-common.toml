@@ -1,0 +1,7 @@
+#Whether particles should show up every time the plopper picks up an item
+displayParticles = true
+#Whether a sound should be played when an item gets picked up by the plopper
+playSound = true
+#If set to true, the plopper will output items to e.g. pipes at all sides instead of just the bottom
+bypassOutputSide = false
+

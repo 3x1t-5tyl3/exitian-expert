@@ -1,0 +1,64 @@
+{
+  "main": {
+    "0": {
+      "title": "Home",
+      "icon": {
+        "stack": "{id:\"minecraft:ender_eye\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/home",
+          "clipboard": true
+        }
+      }
+    },
+    "1": {
+      "title": "KillAll",
+      "icon": {
+        "stack": "{id:\"minecraft:stone\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/incontrol kill all",
+          "clipboard": false
+        }
+      }
+    },
+    "4": {
+      "title": "TPS",
+      "icon": {
+        "stack": "{id:\"minecraft:book\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/spark tps",
+          "clipboard": true
+        }
+      }
+    },
+    "5": {
+      "title": "Quest",
+      "icon": {
+        "stack": "{id:\"ftbquests:book\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/spark tps",
+          "clipboard": true
+        }
+      }
+    },
+    "9": {
+      "title": "Back",
+      "icon": {
+        "stack": "{id:\"minecraft:stone\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/back",
+          "clipboard": true
+        }
+      }
+    }
+  }
+}
