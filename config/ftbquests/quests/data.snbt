@@ -1,0 +1,119 @@
+{
+	version: 13
+	title: "Exitian: Expert"
+	default_reward_team: true
+	default_consume_items: false
+	default_autoclaim_rewards: "disabled"
+	default_quest_shape: "circle"
+	default_quest_disable_jei: false
+	emergency_items: [{
+		id: "akashictome:tome"
+		Count: 1b
+		tag: {
+			"akashictome:data": {
+				industrialforegoing: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
+					}
+				}
+				storagenetwork: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "storagenetwork:network_book"
+					}
+				}
+				powah: {
+					id: "powah:book"
+					Count: 1b
+				}
+				engineerstools: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "engineerstools:engineerstools_manual"
+					}
+				}
+				ftbquests: {
+					id: "ftbquests:book"
+					Count: 1b
+				}
+				immersiveengineering: {
+					id: "immersiveengineering:manual"
+					Count: 1b
+				}
+				woot: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "woot:wootguide"
+					}
+				}
+				bigreactors: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "bigreactors:erguide"
+					}
+				}
+				solcarrot: {
+					id: "solcarrot:food_book"
+					Count: 1b
+				}
+				silentgear: {
+					id: "silentgear:guide_book"
+					Count: 1b
+				}
+				extendedcrafting: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "extendedcrafting:guide"
+					}
+				}
+				tmechworks: {
+					id: "tmechworks:book"
+					Count: 1b
+				}
+				thermal: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "thermal:guidebook"
+					}
+				}
+				rftoolsbase: {
+					id: "rftoolsbase:manual"
+					Count: 1b
+				}
+				dynamictrees: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "dynamictrees:guide"
+					}
+				}
+				cyclic: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "cyclic:cyclic_guide_book"
+					}
+				}
+			}
+		}
+	}]
+	emergency_items_cooldown: 10
+	drop_loot_crates: false
+	loot_crate_no_drop: {
+		passive: 4000
+		monster: 600
+		boss: 0
+	}
+	disable_gui: false
+	grid_scale: 0.5d
+	pause_game: false
+	lock_message: ""
+}

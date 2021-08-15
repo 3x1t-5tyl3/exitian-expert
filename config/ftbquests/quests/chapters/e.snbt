@@ -1,0 +1,70 @@
+{
+	id: "1EC36502A4EA6634"
+	group: ""
+	order_index: 0
+	filename: "e"
+	title: "Information"
+	icon: "contenttweaker:exitian_info"
+	disable_toast: true
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Information"
+			icon: "contenttweaker:exitian_info"
+			tags: ["info"]
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"Exitian: Expert contains many mods."
+				""
+				"All the quests are optional but allows you to explore t"
+			]
+			size: 2.5d
+			id: "593364D4B8603DC9"
+			tasks: [{
+				id: "6289D8E898B68F55"
+				type: "checkmark"
+				title: "E1M1"
+				icon: "artisanworktables:worktable_designer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			id: "7A0D63EA6054C0EE"
+			tasks: [{
+				id: "1D076E72BB978829"
+				type: "item"
+				item: {
+					id: "tiab:timeinabottle"
+					Count: 1b
+					tag: {
+						timeData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			id: "15417451B0F137AB"
+			tasks: [{
+				id: "60559E81BF802C0C"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			id: "1405FB40B2306443"
+			tasks: [{
+				id: "55A9F55CE5FC435A"
+				type: "item"
+				item: "artisanworktables:worktable_basic"
+			}]
+		}
+	]
+}

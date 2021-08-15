@@ -1,0 +1,58 @@
+| Mekanism: Additions     | mekanismadditions:baby_creeper                   | 202 |
+| Mekanism: Additions     | mekanismadditions:baby_enderman                  | 203 |
+| Mekanism: Additions     | mekanismadditions:baby_skeleton                  | 204 |
+| Mekanism: Additions     | mekanismadditions:baby_stray                     | 205 |
+| Mekanism: Additions     | mekanismadditions:baby_wither_skeleton           | 206 |
+| Minecraft               | minecraft:cave_spider                            |   8 |
+| Minecraft               | minecraft:creeper                                |  12 |
+| Minecraft               | minecraft:enderman                               |  20 |
+| Minecraft               | minecraft:ghast                                  |  29 |
+| Minecraft               | minecraft:husk                                   |  34 |
+| Minecraft               | minecraft:illusioner                             |  35 |
+| Minecraft               | minecraft:iron_golem                             |  36 |
+| Minecraft               | minecraft:phantom                                |  58 |
+| Minecraft               | minecraft:pillager                               |  62 |
+| Minecraft               | minecraft:sheep                                  |  69 |
+| Minecraft               | minecraft:skeleton                               |  73 |
+| Minecraft               | minecraft:skeleton_horse                         |  74 |
+| Minecraft               | minecraft:spider                                 |  80 |
+| Minecraft               | minecraft:stray                                  |  82 |
+| Minecraft               | minecraft:vindicator                             |  94 |
+| Minecraft               | minecraft:witch                                  |  96 |
+| Minecraft               | minecraft:wither_skull                           |  99 |
+| Minecraft               | minecraft:zoglin                                 | 101 |
+| Minecraft               | minecraft:zombie                                 | 102 |
+| Minecraft               | minecraft:zombie_villager                        | 104 |
+| Quark                   | quark:forgotten                                  | 248 |
+
+| Quark                   | quark:frog                                       | 244 |
+| Quark                   | quark:glass_frame                                | 251 |
+| Quark                   | quark:gravisand                                  | 243 |
+
+| Quark                   | quark:stoneling                                  | 239 |
+
+| Quark                   | quark:wraith                                     | 256 |
+
+
+Special rules for:
+| Minecraft               | minecraft:blaze                                  |   5 |
+| Thermal Series          | thermal:basalz                                   | 161 |
+| Thermal Series          | thermal:blitz                                    | 163 |
+| Thermal Series          | thermal:blizz                                    | 162 |
+| Minecraft               | minecraft:elder_guardian                         |  17 |
+| Minecraft               | minecraft:guardian                               |  31 |
+| Minecraft               | minecraft:evoker                                 |  22 |
+| Minecraft               | minecraft:slime                                  |  75 |
+| Minecraft               | minecraft:shulker                                |  70 |
+| Minecraft               | minecraft:magma_cube                             |  44 |
+| Minecraft               | minecraft:wither_skeleton                        |  98 |
+| Minecraft               | minecraft:zombified_piglin                       | 105 |
+| Minecraft               | minecraft:hoglin                                 |  32 |
+| Quark                   | quark:toretoise                                  | 254 |
+| Quark                   | quark:wrapped                                    | 241 | On cobbed stone?
+
+Nether:
+| Quark                   | quark:foxhound                                   | 245 |
+
+Water:
+| Minecraft               | minecraft:drowned                                |  16 |

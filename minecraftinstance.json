@@ -48,7 +48,7 @@
   "cachedScans": [],
   "isValid": true,
   "lastPreviousMatchUpdate": "2021-08-15T15:31:07.8080567Z",
-  "lastRefreshAttempt": "2021-08-15T17:31:10.0777501+02:00",
+  "lastRefreshAttempt": "2021-08-15T17:52:24.3926242+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -4051,8 +4051,8 @@
         "isServerPack": false,
         "FileNameOnDisk": "ftb-teams-forge-1605.2.1-build.20.jar"
       },
-      "dateInstalled": "2021-08-15T15:31:08.7127583Z",
-      "dateUpdated": "2021-08-15T15:31:08.7127583Z",
+      "dateInstalled": "2021-08-15T15:52:23.85248Z",
+      "dateUpdated": "2021-08-15T15:52:23.85248Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
@@ -5246,17 +5246,23 @@
       "addonID": 238086,
       "gameInstanceID": "3310413d-1cc7-4233-a58e-b47ce180cba4",
       "installedFile": {
-        "id": 3425591,
-        "displayName": "kubejs-forge-1605.3.15-build.82.jar",
-        "fileName": "kubejs-forge-1605.3.15-build.82.jar",
-        "fileDate": "2021-08-14T22:46:49.86Z",
-        "fileLength": 795667,
+        "id": 3426249,
+        "displayName": "kubejs-forge-1605.3.15-build.84.jar",
+        "fileName": "kubejs-forge-1605.3.15-build.84.jar",
+        "fileDate": "2021-08-15T15:21:51.78Z",
+        "fileLength": 794345,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3425/591/kubejs-forge-1605.3.15-build.82.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3426/249/kubejs-forge-1605.3.15-build.84.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
+          {
+            "id": 0,
+            "addonId": 419699,
+            "type": 3,
+            "fileId": 0
+          },
           {
             "id": 0,
             "addonId": 238222,
@@ -5272,12 +5278,6 @@
           {
             "id": 0,
             "addonId": 416294,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 419699,
             "type": 3,
             "fileId": 0
           }
@@ -5334,19 +5334,19 @@
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 3118553770,
+            "fingerprint": 3018408509,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 3441045622,
+            "fingerprint": 2288184640,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_KubeJS1165_common_856b1fa61d8a49e090b48c5d5297c23b",
-            "fingerprint": 3243447904,
+            "foldername": "architectury_inject_KubeJS1165_common_fb310e71db714f0ebdbae6f3050176e6",
+            "fingerprint": 1138320899,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -5357,7 +5357,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1660700377,
+        "packageFingerprint": 2317751791,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -5372,12 +5372,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "kubejs-forge-1605.3.15-build.82.jar"
+        "FileNameOnDisk": "kubejs-forge-1605.3.15-build.84.jar"
       },
       "dateInstalled": "2021-07-27T16:12:03.8965299Z",
-      "dateUpdated": "2021-08-15T09:53:29.101439Z",
-      "dateLastUpdateAttempted": "2021-08-15T09:53:29.101439Z",
-      "status": 3,
+      "dateUpdated": "2021-08-15T15:59:22.2237856Z",
+      "dateLastUpdateAttempted": "2021-08-15T15:59:22.2237856Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19163,14 +19163,14 @@
       "addonID": 416294,
       "gameInstanceID": "3310413d-1cc7-4233-a58e-b47ce180cba4",
       "installedFile": {
-        "id": 3426006,
-        "displayName": "rhino-1605.1.2-build.39.jar",
-        "fileName": "rhino-1605.1.2-build.39.jar",
-        "fileDate": "2021-08-15T09:54:08.183Z",
-        "fileLength": 952909,
+        "id": 3426191,
+        "displayName": "rhino-1605.1.2-build.41.jar",
+        "fileName": "rhino-1605.1.2-build.41.jar",
+        "fileDate": "2021-08-15T14:06:41.683Z",
+        "fileLength": 959314,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3426/6/rhino-1605.1.2-build.39.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3426/191/rhino-1605.1.2-build.41.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -19179,41 +19179,41 @@
           {
             "foldername": "LICENSE_rhino",
             "fingerprint": 2980605036,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "fabric.mod.json",
-            "fingerprint": 2040450772,
-            "type": 3,
+            "fingerprint": 3241080250,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "modmaven.json",
             "fingerprint": 758145231,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 770561941,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 2588270471,
-            "type": 3,
+            "fingerprint": 1204126877,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 2792652056,
-            "type": 3,
+            "fingerprint": 878752548,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 963759916,
+        "packageFingerprint": 1582352067,
         "gameVersion": [
           "1.16.3",
           "1.16.1",
@@ -19225,81 +19225,21 @@
           "1.16.4",
           "1.16.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000001",
-            "gameVersion": "1.16.1",
-            "gameVersionReleaseDate": "2020-06-24T12:41:11.823Z",
-            "gameVersionName": "1.16.1"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000014.0000000004",
-            "gameVersion": "1.14.4",
-            "gameVersionReleaseDate": "2019-07-19T00:00:00Z",
-            "gameVersionName": "1.14.4"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000017",
-            "gameVersion": "1.17",
-            "gameVersionReleaseDate": "2020-11-12T00:00:00Z",
-            "gameVersionName": "1.17"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000015.0000000002",
-            "gameVersion": "1.15.2",
-            "gameVersionReleaseDate": "2020-01-22T00:00:00Z",
-            "gameVersionName": "1.15.2"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000002",
-            "gameVersion": "1.16.2",
-            "gameVersionReleaseDate": "2020-08-11T16:42:21.863Z",
-            "gameVersionName": "1.16.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2456888,
-        "projectId": 416294,
-        "packageFingerprintId": 726521815,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3223487,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "rhino-1605.1.2-build.39.jar"
+        "FileNameOnDisk": "rhino-1605.1.2-build.41.jar"
       },
       "dateInstalled": "2021-08-15T13:58:43.4565735Z",
-      "dateUpdated": "2021-08-15T13:58:43.4565735Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-08-15T15:59:21.7203463Z",
+      "dateLastUpdateAttempted": "2021-08-15T15:59:21.7203463Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

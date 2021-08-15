@@ -1,0 +1,18 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:dirt",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:gravel",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    }
+  ]
+}

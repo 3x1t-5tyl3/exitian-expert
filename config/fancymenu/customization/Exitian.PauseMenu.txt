@@ -1,0 +1,36 @@
+type = menu
+
+customization-meta {
+  identifier = Exitian.Menu.PauseSinglePlayer
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  orientation = mid-centered
+  buttonaction = closegui
+  x = -50
+  width = 100
+  actionid = a360b747-235f-49ce-ac08-45b4e91bc8ef1627749925138
+  action = addbutton
+  y = -46
+  label = Resume
+  value = 
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  buttonaction = opengui
+  x = 377
+  width = 100
+  actionid = d314d178-e21f-4843-add0-1221905bcd3f1627749925151
+  action = addbutton
+  y = 205
+  label = E
+  value = net.minecraft.client.gui.screen.MainMenuScreen
+  height = 20
+}
+
