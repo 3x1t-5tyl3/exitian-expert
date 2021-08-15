@@ -36,13 +36,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: log-files
-    attributes:
-      label: Log Files
-      description: Include log files from affected session or information on where to obtain them (e.g. sent over Discord). DO NOT extract only parts of the logs, please always include whole log files as they contain important context.
-    validations:
-      required: false
-  - type: textarea
     id: screenshots
     attributes:
       label: Screenshots
@@ -62,7 +55,7 @@ body:
   - type: dropdown
     id: repetition
     attributes:
-      label: Does the bug persist after restarting Neos?
+      label: Does the bug persist after restarting the modpack?
       options:
         - "No"
         - "Yes"
@@ -71,26 +64,10 @@ body:
   - type: input
     id: version
     attributes:
-      label: Neos Version Number
+      label: Pack Version Number (Found in the bottom left of the main menu)
       placeholder: 1.2.3?
     validations:
       required: true
-  - type: dropdown
-    id: platforms
-    attributes:
-      label: What Platforms does this occur on?
-      multiple: true
-      options:
-        - "Windows"
-        - "Linux"
-        - "Android / Quest"
-    validations:
-      required: true
-  - type: input
-    id: reproduction-items
-    attributes:
-      label: Link to Reproduction Item/World
-      description: Optional, but can speed up response for more complex reproduction cases
   - type: dropdown
     id: regression
     attributes:
@@ -104,15 +81,10 @@ body:
   - type: input
     id: regression-version
     attributes:
-      label: If it worked before, on which build?
+      label: If it worked before, on which version?
       placeholder: 1.2.3?
   - type: textarea
     id: additional-context
     attributes:
       label: Additional context
       description: Add any other context about the problem here.
-  - type: textarea
-    id: reporters
-    attributes:
-      label: Reporters
-      description: Usernames / Discord handles of anyone (including yourself) who has reported/replicated this bug (will be used to credit in release notes).
