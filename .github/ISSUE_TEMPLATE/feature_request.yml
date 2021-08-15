@@ -6,83 +6,35 @@ body:
     id: introduction
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to request your feature.
   - type: textarea
-    id: what-happened
+    id: related-to-bug
     attributes:
-      label: Describe the bug?
-      description: A clear and concise description of what the bug is?
+      label: Is it related to an issue?
+      description: Is it related to an issue in the pack or something that could be handled differently?
     validations:
       required: true
   - type: textarea
     id: relevant-issues
     attributes:
       label: Relevant issues
-      description: Did you find any existing issues relevant to this one? If you found the same issue, please contribute to that one instead of making a duplicate.?
+      description: Did you find any existing issues relevant to this one? If you found the same issue, please contribute to that one instead of making a duplicate.
     validations:
       required: true
   - type: textarea
-    id: reproduction
+    id: mod-link
     attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior. 
+      label: Mod link
+      description: CurseForge mod-link if you're requesting a specific mod
     validations:
       required: true
   - type: textarea
-    id: expected-behavior
+    id: why-should-i
     attributes:
-      label: Expected behavior
-      description: A clear and concise description of what you expected to happen.
+      label: Why add it?
+      description: A clear and concise description of why you'd want it added to the pack.
     validations:
       required: true
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots
-      description: If applicable, add screenshots or a video to help explain your problem. DO NOT use screenshots or video in place of description of the problem and replication steps though.?
-    validations:
-      required: false
-  - type: dropdown
-    id: occurrence
-    attributes:
-      label: How often does it happen?
-      options:
-        - "Sometimes"
-        - "Always"
-        - "Only Once"
-    validations:
-      required: true
-  - type: dropdown
-    id: repetition
-    attributes:
-      label: Does the bug persist after restarting the modpack?
-      options:
-        - "No"
-        - "Yes"
-    validations:
-      required: true
-  - type: input
-    id: version
-    attributes:
-      label: Pack Version Number (Found in the bottom left of the main menu)
-      placeholder: 1.2.3?
-    validations:
-      required: true
-  - type: dropdown
-    id: regression
-    attributes:
-      label: Did this work before?
-      options:
-        - "Yes"
-        - "No"
-        - "I Don't Know"
-    validations:
-      required: true
-  - type: input
-    id: regression-version
-    attributes:
-      label: If it worked before, on which version?
-      placeholder: 1.2.3?
   - type: textarea
     id: additional-context
     attributes:
