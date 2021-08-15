@@ -7,9 +7,6 @@ assignees: ''
 
 ---
 
-name: Bug Report
-description: Something isn't working correctly
-labels: [Bug]
 body:
   - type: markdown
     id: introduction
