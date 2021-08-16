@@ -1,18 +1,14 @@
 {
   "oreConfig": [
     {
-      "ore": "minecraft:dirt",
-      "minY": -1,
-      "maxY": -1,
-      "maxVeinSize": -1,
-      "spawnRate": -1.0
-    },
-    {
-      "ore": "minecraft:gravel",
-      "minY": -1,
-      "maxY": -1,
-      "maxVeinSize": -1,
-      "spawnRate": -1.0
+      "ore": "emendatusenigmatica:coal_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 256,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
     }
   ]
 }
