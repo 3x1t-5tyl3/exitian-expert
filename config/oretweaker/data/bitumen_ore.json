@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "emendatusenigmatica:bitumen_ore",
+      "filler": "minecraft:stone",
+      "minY": 52,
+      "maxY": 60,
+      "maxVeinSize": 28,
+      "spawnRate": 0.01,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

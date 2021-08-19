@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "emendatusenigmatica:uranium_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

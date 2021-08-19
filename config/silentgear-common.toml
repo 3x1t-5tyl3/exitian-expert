@@ -9,7 +9,7 @@
 		#When joining a new world, should players be given a blueprint package?
 		#The blueprint package gives some blueprints when used (right-click).
 		#To change what is given, override the starter_blueprints loot table.
-		spawnWithStarterBlueprints = true
+		spawnWithStarterBlueprints = false
 
 	#Repair kit configs.
 	[item.repairKits]
@@ -90,7 +90,7 @@
 	#Range: > 1
 	damageFactorLevels = 10
 	#If true, gear breaks permanently, like vanilla tools and armor
-	breaksPermanently = false
+	breaksPermanently = true
 
 	[gear.enchanting]
 		#Allow gear items to be enchanted by normal means (enchanting table, etc.)

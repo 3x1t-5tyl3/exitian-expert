@@ -1,0 +1,304 @@
+{
+  "oreConfig": [
+    {
+      "ore": "emendatusenigmatica:aluminum_ore",
+      "filler": "minecraft:stone",
+      "minY": 28,
+      "maxY": 52,
+      "maxVeinSize": 35,
+      "spawnRate": 0.025,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:apatite_ore",
+      "filler": "minecraft:stone",
+      "minY": 50,
+      "maxY": 120,
+      "maxVeinSize": 80,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:arcane_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 5,
+      "maxVeinSize": 8,
+      "spawnRate": 0.001,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:bitumen_ore",
+      "filler": "minecraft:stone",
+      "minY": 52,
+      "maxY": 60,
+      "maxVeinSize": 28,
+      "spawnRate": 0.01,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:certus_quartz_ore",
+      "filler": "minecraft:stone",
+      "minY": 12,
+      "maxY": 120,
+      "maxVeinSize": 14,
+      "spawnRate": 0.01,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:cinnabar_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.0005,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:coal_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:cobalt_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:copper_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:diamond_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:dimensional_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:emerald_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:fluorite_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:gold_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:iron_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:lapis_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:lapis_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:lead_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:nickel_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:osmium_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:potassium_nitrate_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:quartz_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:redstone_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:silver_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:sulfur_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:tin_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:uranium_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "emendatusenigmatica:zinc_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "silents_mechanisms:bismuth_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "silents_mechanisms:platinum_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 10,
+      "spawnRate": 0.05,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

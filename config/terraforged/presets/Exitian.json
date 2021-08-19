@@ -12,8 +12,8 @@
     "vanillaSprings": true,
     "vanillaLavaLakes": true,
     "vanillaLavaSprings": true,
-    "mountainBiomeUsage": 1.0,
-    "volcanoBiomeUsage": 1.0
+    "mountainBiomeUsage": 0.845,
+    "volcanoBiomeUsage": 0.853
   },
   "dimensions": {
     "bedrockLayer": {
@@ -38,44 +38,44 @@
     },
     "structures": {
       "appliedenergistics2:meteorite": {
-        "spacing": 32,
-        "separation": 8,
+        "spacing": 9,
+        "separation": 0,
         "salt": 124895656,
         "disabled": true
       },
       "betterdungeons:skeleton_dungeon": {
-        "spacing": 46,
+        "spacing": 109,
         "separation": 23,
         "salt": 732581696,
         "disabled": false
       },
       "betterdungeons:small_dungeon": {
-        "spacing": 10,
-        "separation": 6,
+        "spacing": 119,
+        "separation": 9,
         "salt": 34239824,
         "disabled": false
       },
       "betterdungeons:spider_dungeon": {
-        "spacing": 44,
+        "spacing": 119,
         "separation": 22,
         "salt": 596523136,
         "disabled": false
       },
       "betterdungeons:zombie_dungeon": {
-        "spacing": 48,
+        "spacing": 137,
         "separation": 24,
         "salt": 280667680,
         "disabled": false
       },
       "bettermineshafts:mineshaft": {
-        "spacing": 1,
+        "spacing": 24,
         "separation": 0,
         "salt": 593751808,
         "disabled": false
       },
       "betterstrongholds:stronghold": {
-        "spacing": 85,
-        "separation": 50,
+        "spacing": 1,
+        "separation": 0,
         "salt": 596441280,
         "disabled": false
       },
@@ -134,8 +134,8 @@
         "disabled": false
       },
       "minecraft:monument": {
-        "spacing": 32,
-        "separation": 5,
+        "spacing": 78,
+        "separation": 8,
         "salt": 10387313,
         "disabled": false
       },
@@ -153,13 +153,13 @@
       },
       "minecraft:pillager_outpost": {
         "spacing": 32,
-        "separation": 8,
+        "separation": 18,
         "salt": 165745296,
         "disabled": false
       },
       "minecraft:ruined_portal": {
         "spacing": 40,
-        "separation": 15,
+        "separation": 39,
         "salt": 34222644,
         "disabled": false
       },
@@ -183,7 +183,7 @@
       },
       "minecraft:village": {
         "spacing": 42,
-        "separation": 10,
+        "separation": 28,
         "salt": 10387312,
         "disabled": false
       },
@@ -235,14 +235,14 @@
     "biomeShape": {
       "biomeSize": 1241,
       "macroNoiseSize": 20,
-      "biomeWarpScale": 445,
+      "biomeWarpScale": 443,
       "biomeWarpStrength": 397
     },
     "biomeEdgeShape": {
       "type": "PERLIN2",
       "scale": 445,
       "octaves": 4,
-      "gain": 4.266,
+      "gain": 4.265,
       "lacunarity": 10.31,
       "strength": 450
     }
@@ -250,10 +250,10 @@
   "terrain": {
     "general": {
       "terrainSeedOffset": 0,
-      "terrainRegionSize": 2776,
-      "globalVerticalScale": 1.0,
-      "globalHorizontalScale": 2.08,
-      "fancyMountains": false
+      "terrainRegionSize": 3015,
+      "globalVerticalScale": 0.737,
+      "globalHorizontalScale": 1.424,
+      "fancyMountains": true
     },
     "steppe": {
       "weight": 1.0,
@@ -301,7 +301,7 @@
       "weight": 2.628,
       "baseScale": 2.0,
       "verticalScale": 1.0,
-      "horizontalScale": 1.005
+      "horizontalScale": 1.004
     },
     "volcano": {
       "weight": 2.911,
@@ -347,8 +347,8 @@
   },
   "filters": {
     "erosion": {
-      "dropletsPerChunk": 122,
-      "dropletLifetime": 12,
+      "dropletsPerChunk": 100,
+      "dropletLifetime": 8,
       "dropletVolume": 0.699,
       "dropletVelocity": 0.699,
       "erosionRate": 0.5,
@@ -356,7 +356,7 @@
     },
     "smoothing": {
       "iterations": 2,
-      "smoothingRadius": 0.502,
+      "smoothingRadius": 0.5,
       "smoothingRate": 0.512
     }
   }

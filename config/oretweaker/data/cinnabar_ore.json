@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "emendatusenigmatica:cinnabar_ore",
+      "filler": "minecraft:stone",
+      "minY": 30,
+      "maxY": 120,
+      "maxVeinSize": 70,
+      "spawnRate": 5.0E-4,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

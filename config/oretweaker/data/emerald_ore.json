@@ -1,0 +1,24 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:emerald_ore",
+      "filler": "minecraft:stone",
+      "minY": 4,
+      "maxY": 5,
+      "maxVeinSize": 5,
+      "spawnRate": 20.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:emerald_ore",
+      "filler": "minecraft:stone",
+      "minY": 40,
+      "maxY": 50,
+      "maxVeinSize": 5,
+      "spawnRate": 20.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}
