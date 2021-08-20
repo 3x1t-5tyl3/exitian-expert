@@ -13,7 +13,7 @@
     "vanillaLavaLakes": true,
     "vanillaLavaSprings": true,
     "mountainBiomeUsage": 0.845,
-    "volcanoBiomeUsage": 0.853
+    "volcanoBiomeUsage": 0.852
   },
   "dimensions": {
     "bedrockLayer": {
@@ -74,8 +74,8 @@
         "disabled": false
       },
       "betterstrongholds:stronghold": {
-        "spacing": 1,
-        "separation": 0,
+        "spacing": 101,
+        "separation": 52,
         "salt": 596441280,
         "disabled": false
       },
@@ -242,7 +242,7 @@
       "type": "PERLIN2",
       "scale": 445,
       "octaves": 4,
-      "gain": 4.265,
+      "gain": 4.264,
       "lacunarity": 10.31,
       "strength": 450
     }
@@ -251,7 +251,7 @@
     "general": {
       "terrainSeedOffset": 0,
       "terrainRegionSize": 3015,
-      "globalVerticalScale": 0.737,
+      "globalVerticalScale": 0.736,
       "globalHorizontalScale": 1.424,
       "fancyMountains": true
     },
@@ -301,7 +301,7 @@
       "weight": 2.628,
       "baseScale": 2.0,
       "verticalScale": 1.0,
-      "horizontalScale": 1.004
+      "horizontalScale": 1.003
     },
     "volcano": {
       "weight": 2.911,

@@ -8,13 +8,13 @@
 	waitingTime = 300
 	#Frame rate during reducing.
 	#Range: 1 ~ 60
-	idleFps = 10
+	idleFps = 15
 	#Frame rate during GUI screen(Inventory/Menu) is opened.(0:OFF)
 	#Range: 0 ~ 60
 	guiScreenFps = 0
 	#Detect movement of player position. (0:OFF, 1:Riding/Flying, 2:Always)
 	#Range: 0 ~ 2
-	detectMoving = 1
+	detectMoving = 2
 	#Ignore the mouse button holding.
 	ignoreHoldButton = false
 	#Force reducing FPS if the window is inactive.

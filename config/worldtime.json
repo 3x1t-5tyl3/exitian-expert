@@ -42,7 +42,7 @@
   "worldtime.config.coordsy": {
     "key": "worldtime.config.coordsy",
     "toolTip": "worldtime.config.tt.offsettop",
-    "value": 14,
+    "value": 6,
     "defaultValue": 10,
     "minValue": 0,
     "maxValue": 100
