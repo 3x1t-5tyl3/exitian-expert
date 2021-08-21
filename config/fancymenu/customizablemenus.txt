@@ -36,9 +36,9 @@ com.terraforged.mod.client.gui.screen.ConfigScreen {
 de.guntram.mcmod.GBForgetools.GuiModOptions {
 }
 
-net.minecraft.client.gui.screen.MainMenuScreen {
+net.minecraft.client.gui.screen.IngameMenuScreen {
 }
 
-net.minecraft.client.gui.screen.IngameMenuScreen {
+net.minecraft.client.gui.screen.MainMenuScreen {
 }
 

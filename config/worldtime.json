@@ -42,7 +42,7 @@
   "worldtime.config.coordsy": {
     "key": "worldtime.config.coordsy",
     "toolTip": "worldtime.config.tt.offsettop",
-    "value": 6,
+    "value": 10,
     "defaultValue": 10,
     "minValue": 0,
     "maxValue": 100
@@ -70,7 +70,7 @@
   "worldtime.config.realtimeprefix": {
     "key": "worldtime.config.realtimeprefix",
     "toolTip": "worldtime.config.tt.prefix",
-    "value": "",
+    "value": "Realtime:",
     "defaultValue": ""
   },
   "worldtime.config.gametimeformat": {
