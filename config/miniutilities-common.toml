@@ -22,17 +22,15 @@
 	"Ender Lily Generation" = true
 	#Should Flame Lilies Generate?
 	"Flame Lily Generation" = true
-	#How much RF should the Solar Panel Generate?
+	#How much FE should the Solar Panel Generate?
 	#Range: 0 ~ 1000000
 	"Solar Panel Generation" = 4
-	#How much RF should the Lunar Panel Generate?
+	#How much FE should the Lunar Panel Generate?
 	#Range: 0 ~ 1000000
 	"Lunar Panel Generation" = 4
 	#How many Panels should it take to increase the multiplier by 1?
 	#Range: 1 ~ 1000000
 	"Panel Multiplier Amount" = 50
-	#List ores and their weight, in this format: [minecraft:coal_ore:10]
-	ore_list = ["minecraft:coal_ore:4", "minecraft:iron_ore:3", "minecraft:gold_ore:1", "minecraft:diamond_ore:1", "minecraft:lapis_ore:2", "minecraft:redstone_ore:4", "minecraft:emerald_ore:1"]
 
 ["World Generation"]
 	#Should Ender Ore Generate?

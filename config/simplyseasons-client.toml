@@ -1,12 +1,12 @@
 
 [Information]
-	"Enable season HUD" = true
+	"Enable season HUD" = false
 	"Enable crops season tooltip" = true
 	"Show wet/dry tooltip" = true
-	"Enable seasonal music" = false
+	"Enable seasonal music" = true
 	"Display season in debug menu" = true
 	#This config option requires Enable season HUD to be true. If it is false it will not work.
-	"Require calendar items in inventory to display the HUD" = true
+	"Require calendar items in inventory to display the HUD" = false
 
 [Weather]
 	"Enable blizzard sound effect" = true

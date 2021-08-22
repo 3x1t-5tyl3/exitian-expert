@@ -23,7 +23,7 @@
     },
     "dimensions": {
       "nether": "minecraft:biomesoplenty",
-      "end": "default",
+      "end": "betterendforge:world_type",
       "includeExtraDimensions": true
     }
   },
@@ -242,7 +242,7 @@
       "type": "PERLIN2",
       "scale": 445,
       "octaves": 4,
-      "gain": 4.264,
+      "gain": 4.263,
       "lacunarity": 10.31,
       "strength": 450
     }

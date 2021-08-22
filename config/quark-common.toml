@@ -488,7 +488,7 @@
 		"Bone Meal Utility" = false
 
 [world]
-	"Big Dungeon" = true
+	"Big Dungeon" = false
 	"Big Stone Clusters" = false
 	Biotite = true
 	"Blossom Trees" = true

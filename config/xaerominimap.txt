@@ -51,7 +51,7 @@ dotsStyle:0
 headsScale:1.0
 dotNameScale:1.0
 compassOverWaypoints:false
-showBiome:false
+showBiome:true
 showEntityHeight:true
 showFlowers:false
 keepWaypointNames:true
@@ -86,7 +86,7 @@ tamedMobNames:3
 showLightLevel:0
 renderLayerIndex:1
 crossDimensionalTp:true
-showTime:1
+showTime:0
 biomeColorsVanillaMode:false
 lookingAtAngle:10
 lookingAtAngleVertical:180

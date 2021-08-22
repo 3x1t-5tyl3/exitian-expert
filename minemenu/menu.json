@@ -25,26 +25,14 @@
       }
     },
     "4": {
-      "title": "TPS",
+      "title": "Current TPS",
       "icon": {
-        "stack": "{id:\"minecraft:book\",Count:1b}"
+        "stack": "{id:\"cyclic:carbon_paper\",Count:1b}"
       },
       "action": {
         "command": {
           "command": "/spark tps",
-          "clipboard": true
-        }
-      }
-    },
-    "5": {
-      "title": "Quest",
-      "icon": {
-        "stack": "{id:\"ftbquests:book\",Count:1b}"
-      },
-      "action": {
-        "command": {
-          "command": "/spark tps",
-          "clipboard": true
+          "clipboard": false
         }
       }
     },

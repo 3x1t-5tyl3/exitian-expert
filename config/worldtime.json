@@ -2,7 +2,7 @@
   "worldtime.config.gametimey": {
     "key": "worldtime.config.gametimey",
     "toolTip": "worldtime.config.tt.offsettop",
-    "value": 10,
+    "value": 5,
     "defaultValue": 5,
     "minValue": 0,
     "maxValue": 100
@@ -16,7 +16,7 @@
   "worldtime.config.gametimex": {
     "key": "worldtime.config.gametimex",
     "toolTip": "worldtime.config.tt.offsetleft",
-    "value": 54,
+    "value": 45,
     "defaultValue": 0,
     "minValue": 0,
     "maxValue": 100
@@ -24,7 +24,7 @@
   "worldtime.config.gametimeprefix": {
     "key": "worldtime.config.gametimeprefix",
     "toolTip": "worldtime.config.tt.prefix",
-    "value": "",
+    "value": "Game - ",
     "defaultValue": ""
   },
   "worldtime.config.realtime": {
@@ -42,7 +42,7 @@
   "worldtime.config.coordsy": {
     "key": "worldtime.config.coordsy",
     "toolTip": "worldtime.config.tt.offsettop",
-    "value": 10,
+    "value": 0,
     "defaultValue": 10,
     "minValue": 0,
     "maxValue": 100
@@ -50,7 +50,7 @@
   "worldtime.config.gametime": {
     "key": "worldtime.config.gametime",
     "toolTip": "worldtime.config.tt.gametime",
-    "value": false,
+    "value": true,
     "defaultValue": true
   },
   "worldtime.config.coords": {
@@ -62,7 +62,7 @@
   "worldtime.config.coordsx": {
     "key": "worldtime.config.coordsx",
     "toolTip": "worldtime.config.tt.offsetleft",
-    "value": 45,
+    "value": 0,
     "defaultValue": 0,
     "minValue": 0,
     "maxValue": 100
@@ -82,7 +82,7 @@
   "worldtime.config.realtimex": {
     "key": "worldtime.config.realtimex",
     "toolTip": "worldtime.config.tt.offsetleft",
-    "value": 50,
+    "value": 55,
     "defaultValue": 0,
     "minValue": 0,
     "maxValue": 100
@@ -96,7 +96,7 @@
   "worldtime.config.realtimey": {
     "key": "worldtime.config.realtimey",
     "toolTip": "worldtime.config.tt.offsettop",
-    "value": 6,
+    "value": 5,
     "defaultValue": 10,
     "minValue": 0,
     "maxValue": 100
