@@ -1,4 +1,4 @@
-13 possible world types found:
+12 possible world types found:
 - default
 - flat
 - large_biomes
@@ -8,7 +8,6 @@
 - single_biome_floating_islands
 - debug_all_block_states
 - minecraft.biomesoplenty
-- betterendforge.world_type
 - terraforged.terraforged
 - quark.realistic
 - quark.realistic_large_biomes
