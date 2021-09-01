@@ -20,7 +20,7 @@
 	#Enable Modern UI's tooltip style.
 	enable = true
 	#The tooltip frame color. Format: 0xRRGGBB. Default value: 0xAADCF0
-	frameColor = "0xFFAA11"
+	frameColor = "0xFF0011"
 
 #General Config
 [general]

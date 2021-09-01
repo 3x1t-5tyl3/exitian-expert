@@ -1,7 +1,7 @@
 
 [system_time]
 	#Synchronize game world time with system time
-	sync_to_system_time = true
+	sync_to_system_time = false
 	#Sync time every n ticks
 	#Range: 1 ~ 864000
 	sync_to_system_time_rate = 20
@@ -9,10 +9,10 @@
 [arbitrary_time]
 	#How long daytime lasts (0 - 12000)
 	#Range: 1 ~ 178956
-	day_length_minutes = 10
+	day_length_minutes = 90
 	#How long nighttime lasts (12000 - 24000)
 	#Range: 1 ~ 178956
-	night_length_minutes = 10
+	night_length_minutes = 30
 
 [miscellaneous]
 	debugMode = false

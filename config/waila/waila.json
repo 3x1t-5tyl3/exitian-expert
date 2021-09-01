@@ -4,7 +4,7 @@
     "shiftForDetails": false,
     "displayMode": "TOGGLE",
     "hideFromDebug": true,
-    "showItem": true,
+    "iconMode": "TOP",
     "enableTextToSpeech": false,
     "maxHealthForRender": 40,
     "maxHeartsPerLine": 10,
@@ -40,7 +40,7 @@
     }
   },
   "formatting": {
-    "modName": "\\u00a7d\\u00A7o%s",
+    "modName": "§d§o%s",
     "blockName": "\\u00A7e%s",
     "fluidName": "\\u00A7f%s",
     "entityName": "\\u00A7a%s",
