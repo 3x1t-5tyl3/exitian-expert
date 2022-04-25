@@ -2,13 +2,13 @@
 #General Config Section
 [general]
 	#The Application ID of the Discord App to use
-	clientID = 762726289341677668
+	clientID = 873945868301115413
 	#Enable/Disable the mod
 	enabled = true
 	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
 	debugging = false
 	#Enable/Disable the in game config screen
-	configScreen = true
+	configScreen = false
 	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
 	launcherIntegration = false
 	#Internal Version Number. NO TOUCHY!
@@ -19,38 +19,42 @@
 	#Enable/Disable the Game Loading Event
 	enabled = true
 	#The first line of text under the app name
-	description = "Minecraft is loading"
+	description = "Initilizing Exitian: Expert.."
 	#The second line of text under the app name
-	state = "Game Starting..."
+	state = "Loading.."
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert on %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "modpack_logo"
 	#The text that gets displayed when the small image is hovered
-	smallImageText = "%mods% mods installed"
+	smallImageText = "%mods% mods"
 	#The buttons to display on Discord
-	buttons = []
+	[[init.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #The Main Menu event
 [main_menu]
 	#Enable/Disable the Main Menu Event
 	enabled = true
 	#The first line of text under the app name
-	description = "%player% is currently lazy"
+	description = "Main Menu"
 	#The seconds line of text under the app name
-	state = "Chilling in the menu"
+	state = ""
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert - %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "modpack_logo"
 	#The text that gets displayed when the small image is hovered
-	smallImageText = "%mods% mods installed"
+	smallImageText = "%mods% mods"
 	#The buttons to display on Discord
-	buttons = []
+	[[main_menu.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #The Server List event
 [server_list]
@@ -61,15 +65,17 @@
 	#The second line of text under the app name
 	state = "Searching for friends"
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert on %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "modpack_logo"
 	#The text that gets displayed when the small image is hovered
-	smallImageText = "%mods% mods installed"
+	smallImageText = "%mods% mods"
 	#The buttons to display on Discord
-	buttons = []
+	[[server_list.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #The Realms Screen event
 [realms_list]
@@ -80,15 +86,17 @@
 	#The second line of text under the app name
 	state = "Browsing Realms"
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert on %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "modpack_logo"
 	#The text that gets displayed when the small image is hovered
-	smallImageText = "%mods% mods installed"
+	smallImageText = "%mods% mods"
 	#The buttons to display on Discord
-	buttons = []
+	[[realms_list.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #The Join Game Event
 [join_game]
@@ -99,53 +107,59 @@
 	#The second line of text under the app name
 	state = "Joining Game"
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert on %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "loading"
 	#The text that gets displayed when the small image is hovered
-	smallImageText = "%mods% mods installed"
+	smallImageText = "%mods% mods"
 	#The buttons to display on Discord
-	buttons = []
+	[[join_game.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #The Single Player Event
 [single_player]
 	#Enable/Disable the Single Player Event
 	enabled = true
 	#The first line of text under the app name
-	description = "Currently In %world%"
+	description = "Dimension: %world%"
 	#The second line of text under the app name
-	state = "Playing lonely mode"
+	state = "Singleplayer"
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert on %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "modpack_logo"
 	#The text that gets displayed when the small image is hovered
-	smallImageText = "%mods% mods installed"
+	smallImageText = "%mods% mods"
 	#The buttons to display on Discord
-	buttons = []
+	[[single_player.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #The Multi Player Event
 [multi_player]
 	#Enable/Disable the Multi Player Event
 	enabled = true
 	#The first line of text under the app name
-	description = "Playing on %servername% with %players% players"
+	description = "Playing on %servername% - %players% players"
 	#The second line of text under the app name
 	state = "Playing online"
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert on %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "modpack_logo"
 	#The text that gets displayed when the small image is hovered
-	smallImageText = "%mods% mods installed"
+	smallImageText = "%mods% mods"
 	#The buttons to display on Discord
-	buttons = []
+	[[multi_player.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #The Realms Game Event
 [realms]
@@ -156,63 +170,67 @@
 	#The second line of text under the app name
 	state = "Playing on a Realm"
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert on %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "modpack_logo"
 	#The text that gets displayed when the small image is hovered
 	smallImageText = "%realmdescription%"
 	#The buttons to display on Discord
-	buttons = []
+	[[realms.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #Fallback event for disabled events
 [generic]
 	#The first line of text under the app name
-	description = "Playing Minecraft"
+	description = "Exitian:Expert - %mcver%"
 	#The second line of text under the app name
 	state = ""
 	#The Asset ID of the image to display as the large image
-	largeImageKey = "mclogonew"
+	largeImageKey = "exitian_expert"
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "It's Minecraft %mcver%, but modded"
+	largeImageText = "Exitian: Expert on %mcver%"
 	#The Asset ID of the image to display as the small image
-	smallImageKey = "mclogo"
+	smallImageKey = "modpack_logo"
 	#The text that gets displayed when the small image is hovered
-	smallImageText = "%mods% mods installed"
+	smallImageText = "%mods% mods"
 	#The buttons to display on Discord
-	buttons = []
+	[[section.buttons]]
+		label = "Exitian: Expert Website"
+		url = "https://exitian.ch/modpack"
 
 #Dimension Information Overrides
 [dimension_overrides]
 	#Allows you to override the displayed values for dimensions
-	enabled = false
+	enabled = true
 
 	#The Dimensions to override
 	[[dimension_overrides.dimensions]]
 		name = "overworld"
-		description = "%player% is in The Overworld"
+		description = ""
 		state = ""
 		largeImageKey = "overworld"
-		largeImageText = "In the Overworld"
-		smallImageKey = "mclogo"
-		smallImageText = "%mods% mods installed"
+		largeImageText = "Overworld"
+		smallImageKey = ""
+		smallImageText = "%mods% mods"
 
 	[[dimension_overrides.dimensions]]
 		name = "the_nether"
-		description = "%player% is in The Nether"
+		description = ""
 		state = ""
 		largeImageKey = "nether"
-		largeImageText = "In the Nether"
-		smallImageKey = "mclogo"
-		smallImageText = "%mods% mods installed"
+		largeImageText = "Nether"
+		smallImageKey = ""
+		smallImageText = "%mods% mods"
 
 	[[dimension_overrides.dimensions]]
 		name = "the_end"
-		description = "%player% is in The End"
+		description = ""
 		state = ""
 		largeImageKey = "end"
-		largeImageText = "In the End"
-		smallImageKey = "mclogo"
-		smallImageText = "%mods% mods installed"
+		largeImageText = "The End"
+		smallImageKey = ""
+		smallImageText = "%mods% mods"
 
