@@ -4,11 +4,8 @@
 !/defaultconfigs
 !/kubejs
 !/minemenu
-!/modpack-assets
 !/scripts
 !/resourcepacks
 !/schematics
 !/simple-rpc
-!minecraftinstance.json
 .curseclient
-!modlist.html
