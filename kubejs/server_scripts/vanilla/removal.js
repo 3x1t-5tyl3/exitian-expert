@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 1
 var filename = "vanilla/removal.js"
 
 console.info("Starting "+filename)
