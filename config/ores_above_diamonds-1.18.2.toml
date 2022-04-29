@@ -2,9 +2,9 @@
 #Note that almost all config changes require a server restart and/or a full minecraft restart. Dimension Configuration
 [dimensional_ore]
 	#Spawn amethysts in the overworld? Default = true
-	spawn_amethyst_overworld = true
+	spawn_amethyst_overworld = false
 	#Spawn black opals in the overworld? Default = true
-	spawn_black_opal_overworld = true
+	spawn_black_opal_overworld = false
 	#Spawn amethysts in the nether? Default = false
 	spawn_amethyst_nether = false
 	#Spawn black opals in the nether? Default = false

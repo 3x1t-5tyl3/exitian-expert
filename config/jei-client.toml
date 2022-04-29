@@ -41,9 +41,9 @@
 	ColorSearchMode = "DISABLED"
 	#Search mode for resources locations (prefix: &)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
-	ResourceLocationSearchMode = "DISABLED"
+	ResourceLocationSearchMode = "REQUIRE_PREFIX"
 	#Search advanced tooltips (visible with F3+H)
-	SearchAdvancedTooltips = false
+	SearchAdvancedTooltips = true
 
 [modname]
 	#Formatting for mod name tooltip

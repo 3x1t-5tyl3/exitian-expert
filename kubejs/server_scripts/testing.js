@@ -1,0 +1,1 @@
+/* event.recipes.mekanismSawing('minecraft:redstone', 'minecraft:brick', item.of('minecraft:clay').chance(0.3)) */
