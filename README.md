@@ -1,12 +1,10 @@
-# Exitian: Expert
-
-Exitian Expert is a modpack revolving around tech based expertise in modded minecraft.
-It'll include changed meta for basically everything. Ores, mining, world gen, terrain, acquiring of items, mob spawns ect.
-
-# !WIP!
-This pack is not for open testing. The github is here for debugging/working on the pack
 
 [<img alt="alt_text" width="1024px" src="/images/pack_github.png" />](https://discord.gg/jrvXcyAvuw)
+
+# Exitian: Expert
+
+An automation focused modpack. Heavily WIP. Click the link above to get to the official discord!
+Please discuss PR's on my discord first.
 
 <details>
   <summary>#Modlist</summary>
