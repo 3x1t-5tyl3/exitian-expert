@@ -6,6 +6,8 @@ It'll include changed meta for basically everything. Ores, mining, world gen, te
 # !WIP!
 This pack is not for open testing. The github is here for debugging/working on the pack
 
+[<img alt="alt_text" width="80px" src="images/discord.PNG" />](https://discord.gg/jrvXcyAvuw)
+
 <details>
   <summary>#Modlist</summary>
   
