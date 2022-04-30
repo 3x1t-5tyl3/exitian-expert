@@ -7,10 +7,8 @@ It'll include changed meta for basically everything. Ores, mining, world gen, te
 This pack is not for open testing. The github is here for debugging/working on the pack
 
 <details>
-  <summary>Spoiler warning</summary>
-  
-  Spoiler text. Note that it's important to have a space after the summary tag. You should be able to write any markdown you want inside the `<details>` tag... just make sure you close `<details>` afterward.
-  
+  <summary>#Modlist</summary>
+
   ```* ftb-essentials-1802.1.7-build.42.jar
 * supermartijn642configlib-1.0.9-mc1.18.jar
 * AllTheCompatibility-1.18.x-(v.1.8.1).jar
@@ -264,5 +262,3 @@ This pack is not for open testing. The github is here for debugging/working on t
 * createaddition-1.18.2-20220424a.jar"
   
 </details>
-# Modlist
-
