@@ -11,8 +11,7 @@ This pack is not for open testing. The github is here for debugging/working on t
   
   Spoiler text. Note that it's important to have a space after the summary tag. You should be able to write any markdown you want inside the `<details>` tag... just make sure you close `<details>` afterward.
   
-  ```javascript
-  console.log("* ftb-essentials-1802.1.7-build.42.jar
+  ```* ftb-essentials-1802.1.7-build.42.jar
 * supermartijn642configlib-1.0.9-mc1.18.jar
 * AllTheCompatibility-1.18.x-(v.1.8.1).jar
 * IntegratedTerminals-1.18.2-1.2.16.jar
@@ -262,8 +261,7 @@ This pack is not for open testing. The github is here for debugging/working on t
 * no-telemetry-1.3.0.jar
 * Morph-o-Tool-1.5-32.jar
 * flickerfix-2.0.0.jar
-* createaddition-1.18.2-20220424a.jar");
-  ```
+* createaddition-1.18.2-20220424a.jar"
   
 </details>
 # Modlist
