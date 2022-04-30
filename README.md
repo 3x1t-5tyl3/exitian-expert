@@ -8,8 +8,7 @@ This pack is not for open testing. The github is here for debugging/working on t
 
 <details>
   <summary>#Modlist</summary>
-
-  ```* ftb-essentials-1802.1.7-build.42.jar
+* ftb-essentials-1802.1.7-build.42.jar
 * supermartijn642configlib-1.0.9-mc1.18.jar
 * AllTheCompatibility-1.18.x-(v.1.8.1).jar
 * IntegratedTerminals-1.18.2-1.2.16.jar
@@ -260,5 +259,4 @@ This pack is not for open testing. The github is here for debugging/working on t
 * Morph-o-Tool-1.5-32.jar
 * flickerfix-2.0.0.jar
 * createaddition-1.18.2-20220424a.jar"
-  
 </details>
