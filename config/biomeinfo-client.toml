@@ -15,7 +15,7 @@ posX = 3
 posY = 3
 #The size of the biome info (multiplier)
 #Range: 0.0 ~ 1.7976931348623157E308
-scale = 1.0
+scale = 2.0
 #true if the biome info should be rendered with a shadow, false otherwise
 textShadow = true
 #The color to display the biome info in (Format: 0xRRGGBB)

@@ -1,8 +1,8 @@
 
 [general]
-	"Enable 'q' Button" = true
+	"Enable 'q' Button" = false
 	"'q' Button on the Right" = false
-	"Disable Q Menu Effects" = false
+	"Disable Q Menu Effects" = true
 	#Disable this to turn off the quark system that makes features turn off when specified mods with the same content are loaded
 	"Use Anti Overlap" = true
 	#Quark replaces the Piston logic to allow for its piston features to work. If you're having troubles, try turning this off.
@@ -47,12 +47,12 @@
 	"Obsidian Plate" = true
 	"Metal Buttons" = true
 	"Jukebox Automation" = true
-	"Iron Rod" = true
+	"Iron Rod" = false
 	Gravisand = true
 	"Feeding Trough" = true
 	"Ender Watcher" = true
-	"Dispensers Place Blocks" = true
-	Chute = true
+	"Dispensers Place Blocks" = false
+	Chute = false
 	"Chains Connect Blocks" = true
 
 	[automation.pistons_move_tile_entities]
@@ -93,7 +93,7 @@
 	"Soul Sandstone" = true
 	Shingles = true
 	"Shear Vines" = true
-	Rope = true
+	Rope = false
 	"Oriental Palette" = true
 	"Nether Brick Fence Gate" = true
 	"More Stone Variants" = true
@@ -264,7 +264,7 @@
 	Trowel = true
 	"Slime In A Bucket" = true
 	"Seed Pouch" = true
-	Pickarang = true
+	Pickarang = false
 	"Pathfinder Maps" = true
 	"Parrot Eggs" = true
 	"Endermosh Music Disc" = true
@@ -552,9 +552,9 @@
 	Permafrost = true
 	"New Stone Types" = true
 	"Nether Obsidian Spikes" = true
-	"Monster Box" = true
+	"Monster Box" = false
 	"Glimmering Weald" = true
-	"Fairy Rings" = true
+	"Fairy Rings" = false
 	Corundum = true
 	"Chorus Vegetation" = true
 	"Blossom Trees" = true
@@ -1439,7 +1439,7 @@
 	"Usage Ticker" = true
 	"Soul Candles" = true
 	"Microcrafting Helper" = true
-	"Improved Tooltips" = true
+	"Improved Tooltips" = false
 	"Greener Grass" = true
 	"Chest Searching" = true
 	"Back Button Keybind" = true
@@ -1521,6 +1521,7 @@
 	"Narrator Readout" = false
 	"Game Nerfs" = false
 	"Adjustable Chat" = false
+	"Zombie Villagers On Normal" = false
 
 	[experimental.spawner_replacer]
 		#Mobs to be replaced with other mobs.

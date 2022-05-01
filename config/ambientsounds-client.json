@@ -57,17 +57,17 @@
     "ocean.light-wind": 1
   },
   "dimensions": {
-    "nether": 1,
-    "end": 1,
-    "abyssalcraft": 1,
-    "void": 1,
-    "twilightforest": 1,
-    "betweenlands": 1,
-    "cave": 1,
-    "midnight": 1,
-    "galacticraft": 1,
-    "galacticraft.planets": 1,
-    "surface": 1
+    "nether": 0.3284132778644562,
+    "end": 0.3136531412601471,
+    "abyssalcraft": 0.3284132778644562,
+    "void": 0.6420664191246033,
+    "twilightforest": 0.3357933461666107,
+    "betweenlands": 0.33210331201553345,
+    "cave": 0.3284132778644562,
+    "midnight": 0.3284132778644562,
+    "galacticraft": 0.3284132778644562,
+    "galacticraft.planets": 0.3284132778644562,
+    "surface": 0.3136531412601471
   },
   "silent-dimensions": [],
   "general": {

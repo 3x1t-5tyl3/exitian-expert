@@ -217,10 +217,10 @@
 			#Range: 0 ~ 1001
 			minimum_distance = 10
 			#With this option road signs will display the distance to the structure that they are pointing to
-			show_distance_text = true
+			show_distance_text = false
 
 		[spawns.structures.wild_flax]
-			enabled = true
+			enabled = false
 			#Spawn wild flax on average every 'x' chunks. Increases spawn frequency
 			#Range: 1 ~ 100
 			rarity = 6
@@ -229,7 +229,7 @@
 			attempts_per_patch = 35
 
 		[spawns.structures.cave_urns]
-			enabled = true
+			enabled = false
 			#Attempts at every patch to spawn 1 block. Increases average patch size
 			#Range: 1 ~ 100
 			attempts_per_patch = 4

@@ -1,0 +1,21 @@
+Rarity types:
+
+Storage blocks and nuggets inherit rarity.
+
+1 - lowest, stuff like lead, iron ect
+2 - low tier base alloys - stuff like brass, bronze ect
+3 - rare metals and their alloys - platinum, gold, silver ect
+4 - rare alloys - enderium (not electrum) ect.
+5 - magical ingots - neptunium, manasteel ect
+6 - High level ingots like tyrian
+7 - end-game ingots like the ultiamte ingot
+
+Harvest level:
+
+1 - Wood
+2 - gold
+3 - stone
+4 - Iron
+5 - Diamond
+6 - netherite
+7 - amethyst

@@ -8,12 +8,12 @@ console.info("Starting " + filename)
 onEvent("recipes", event => {
 
     allIngots.forEach((item) => {
-        event
-            .shapeless(item.block_Planks, [item.block_Log])
-            .id(item.rec_ID + "/shapeless")
+            event
+                .shapeless(item.block_Planks, [item.block_Log])
+                .id(item.rec_ID + "/shapeless")
 
-    })
-
+        })
+        // unify sawdust
     event.replaceInput({}, "#forge:sawdust", "mekanism:sawdust")
     event.replaceOutput({}, "#forge:sawdust", "mekanism:sawdust")
 
@@ -24,17 +24,17 @@ onEvent("recipes", event => {
 })
 
 
-
-/* onEvent("recipes", event => {
-    event.remove({id: 'immersiveengineering:crafting/cokebrick'})
-    event.remove({id: 'immersiveengineering:crafting/blastbrick'})
-    event.remove({id: 'immersiveengineering:crafting/blastbrick_reinforced'})
-    event.remove({id: 'immersiveengineering:alloysmelter/brass'})
+/* 
+onEvent("recipes", event => {
+    event.remove({ id: 'immersiveengineering:crafting/cokebrick' })
+    event.remove({ id: 'immersiveengineering:crafting/blastbrick' })
+    event.remove({ id: 'immersiveengineering:crafting/blastbrick_reinforced' })
+    event.remove({ id: 'immersiveengineering:alloysmelter/brass' })
     event.shaped('immersiveengineering:blastbrick_reinforced', [
         ' C ',
         'CBC',
         ' C '
-      ], {
+    ], {
         C: 'immersiveengineering:ingot_steel',
         B: 'immersiveengineering:blastbrick'
     })
@@ -42,20 +42,20 @@ onEvent("recipes", event => {
         'SAS',
         'ABA',
         'SAS'
-      ], {
+    ], {
         S: 'minecraft:clay',
         A: 'minecraft:bricks',
         B: 'immersiveengineering:ingot_steel'
-      })
+    })
     event.shaped('3x immersiveengineering:blastbrick', [
         'SAS',
         'ABA',
         'SAS'
-      ], {
+    ], {
         S: 'minecraft:nether_bricks',
         A: 'minecraft:bricks',
         B: 'immersiveengineering:ingot_steel'
-      })
+    })
 }) */
 
 console.info("Finished " + filename)
