@@ -66,6 +66,8 @@ const woodTypes = [
     'silentgear:netherwood'
 ]
 
+
+
 woodTypes.forEach((wood_type) => {
     var variant_Split = wood_type.split(":")
     var w_Suffix = ""

@@ -19,7 +19,7 @@
 				""
 				"{image:#FFFFFF width:100 height:100 align:1}"
 				""
-				"\"The Grove\" is a Expert modpack with a classical approach."
+				"\"Exitian: Expert\" is a Expert modpack with a classical approach."
 				""
 				"Magic and Technology are seperated unless they clash. An example is \"Mythic Botany\". Otherwise they'll stay seperate for the most part."
 				""
@@ -117,6 +117,12 @@
 					item: "farmersdelight:cutting_board"
 				}
 			]
+			rewards: [{
+				id: "0A1C733B81754E97"
+				type: "gamestage"
+				auto: "invisible"
+				stage: ""
+			}]
 		}
 	]
 }

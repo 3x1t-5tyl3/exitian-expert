@@ -1,0 +1,71 @@
+
+# These features use the Rarity Placement Modifier.
+# This means the chance of a feature generating in a chunk is 1/rarityPerChunk.
+# Set it to 1 for the feature to spawn in every chunk, 10000 to remove the feature, or anywhere in between.
+["Rarity-Based Feature Placements"]
+	#Boulder rarity per chunk
+	#Range: 1 ~ 10000
+	boulderRarityPerChunk = 4
+	#Smooth dirt patch rarity per chunk
+	#Range: 1 ~ 10000
+	smoothDirtPatchRarityPerChunk = 7
+	#Humus patch rarity per chunk in the jungle
+	#Range: 1 ~ 10000
+	humusPatchRarityPerChunk = 4
+	#Clover patch rarity per chunk
+	#Range: 1 ~ 10000
+	cloverPatchRarityPerChunk = 5
+	#Daisies patch rarity per chunk
+	#Range: 1 ~ 10000
+	daisiesPatchRarityPerChunk = 14
+	#Pebbles rarity
+	#Range: 1 ~ 10000
+	pebblesRarityPerChunk = 2
+	#Rock rarity
+	#Range: 1 ~ 10000
+	rockRarityPerChunk = 2
+	#Fallen log rarity per chunk
+	#Range: 1 ~ 10000
+	fallenLogRarityPerChunk = 7
+	#Daisy-decorated tree rarity per chunk
+	#Range: 1 ~ 10000
+	oakDaisiesRarityPerChunk = 13
+	#Hollow Log oak tree rarity per chunk
+	#Range: 1 ~ 10000
+	oakHollowRarityPerChunk = 10
+
+# These features use the Count Placement Modifier.
+# This means the higher the number, the more often it will generate.
+# Set it to 0 to remove the feature.
+["Count-Based Feature Placements"]
+	#Fallen log count on each layer in the nether biomes
+	#Range: 0 ~ 512
+	fallenLogNetherCount = 3
+	#Mushroom shelf count on the surface
+	#Range: 0 ~ 512
+	mushroomShelfSurfaceCount = 256
+	#Mushroom shelf underground count min value
+	#Range: 0 ~ 512
+	mushroomShelfUndergroundCountMin = 104
+	#Mushroom shelf undeground count max value
+	#Range: 0 ~ 512
+	mushroomShelfUndergroundCountMax = 157
+	#Hanging moss count
+	#Range: 0 ~ 512
+	hangingMossCount = 128
+
+["Other World Generation Settings"]
+	#Trees will spawn with a block of rooted dirt underneath, rather than regular dirt.
+	generateTreeRoots = true
+	#Trees in forests will spawn with 2D branch blocks.
+	generateTreeBranches = true
+	#Chance that fallen leaves will generate under a tree (in percentage). Set to 0 to disable this.
+	#Range: 0.0 ~ 1.0
+	fallenLeavesChance = 0.1
+	#Dark Oak trees will spawn with a patch of humus underneath.
+	generateDarkOakHumus = true
+
+["Gameplay Settings"]
+	#Mushrooms can be placed and survive regardless of light level.
+	removeMushroomLightLevel = true
+

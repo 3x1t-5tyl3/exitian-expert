@@ -1,0 +1,10 @@
+{
+	id: "53FB1EBB18A6481B"
+	group: ""
+	order_index: 2
+	filename: "gates"
+	title: "Gates"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

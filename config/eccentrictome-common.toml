@@ -8,7 +8,7 @@
 	#Whitelisted items
 	items = ["tconstruct:materials_and_you", "tconstruct:puny_smelting", "tconstruct:mighty_smelting", "tconstruct:fantastic_foundry", "tconstruct:tinkers_gadgetry", "integrateddynamics:on_the_dynamics_of_integration", "cookingforblockheads:no_filter_edition", "alexsmobs:animal_dictionary", "occultism:dictionary_of_spirits", "theoneprobe:probenote", "compactmachines:personal_shrinking_device"]
 	#Whitelisted names
-	names = ["book", "tome", "lexicon", "nomicon", "manual", "knowledge", "pedia", "compendium", "guide", "codex", "journal", "enchiridion"]
+	names = ["book", "tome", "lexicon", "nomicon", "manual", "knowledge", "pedia", "compendium", "guide", "codex", "journal", "enchiridion", "dictionary"]
 	#Mod aliases
 	aliases = ["thermalexpansion=thermalfoundation", "thermaldynamics=thermalfoundation", "thermalcultivation=thermalfoundation", "redstonearsenal=thermalfoundation", "rftoolsdim=rftools", "rftoolspower=rftools", "rftoolscontrol=rftools", "xnet=rftools"]
 	#Blacklisted mods
