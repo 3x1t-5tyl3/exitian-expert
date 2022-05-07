@@ -1,3 +1,9 @@
+/* 
+
+Crafting table functions
+
+*/
+
 function ringRec(inputItem, outputItem) {
     event.shaped(outputItem, [
         "RRR",
@@ -41,4 +47,15 @@ function expRod(inputItem, outputItem) {
     ], {
         R: inputItem
     })
+}
+
+/* 
+
+Remove and hide item
+
+*/
+
+function remHideItem(input = "", itemToHide = "") {
+    event.remove(toString(input))
+    global.hiddenitems.push(itemToHide)
 }
