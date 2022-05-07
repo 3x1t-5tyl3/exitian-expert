@@ -26,14 +26,18 @@ var HSLtoRGB = (h, s, l) => {
     return (Math.round(255 * f(0)) << 16) + (Math.round(255 * f(8)) << 8) + (Math.round(255 * f(4)));
 };
 
-onEvent('client.tick', event => {
-    if (shiftToolTip) {
+function changeColorRBW() {
+    if (true || shiftToolTip) {
         hue += 5
         if (hue > 360) {
             hue = 0
         }
         changingColor = HSLtoRGB(hue, 100, 66)
     }
+}
+
+onEvent('client.tick', event => {
+
 })
 
 onEvent("player.inventory.changed", event => {
@@ -42,6 +46,7 @@ onEvent("player.inventory.changed", event => {
 
 onEvent('item.tooltip', event => {
     event.addAdvanced("minecraft:diamond", (item, advanced, text) => {
+        changeColorRBW()
         text.set(0, [Text.of("Diamond").color(changingColor)])
         if (event.isShift()) {
             shiftToolTip = true
