@@ -1,0 +1,13 @@
+
+["Black Grape"]
+	#Black Grape Seeds: Default is 3
+	"Drop Rate" = 3
+
+["White Grape"]
+	#White Grape Seeds: Default is 2
+	"Drop Rate" = 2
+
+[Tomato]
+	#Tomato Seeds: Default is 2
+	"Drop Rate" = 2
+

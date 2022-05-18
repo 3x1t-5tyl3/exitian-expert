@@ -1,0 +1,35 @@
+{
+	id: "5227D2E6E4DF68FB"
+	group: ""
+	order_index: 0
+	filename: "help"
+	title: "Help"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		icon: "botania:cosmetic_questgiver_mark"
+		disable_toast: true
+		x: 0.0d
+		y: 0.0d
+		subtitle: "Runs /reload command"
+		description: [
+			"Runs the /reload command in-case the recipes don't load properly."
+			""
+			"This is due to a Forge Bug that makes certain mods load tags too early in the game-loop."
+		]
+		optional: true
+		id: "194954A387400FC4"
+		tasks: [{
+			id: "2193C43AE0165958"
+			type: "checkmark"
+			title: "Reload"
+		}]
+		rewards: [{
+			id: "14E1239583D370DA"
+			type: "questsadditions:repeat"
+			icon: "itemfilters:tag"
+			auto: "no_toast"
+			table_id: 7650080909417387493L
+		}]
+	}]
+}

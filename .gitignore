@@ -1,6 +1,6 @@
 *
-!/config
-/config/WildfireGender/*
+!/config**
+config/WildfireGender/274e5527-06e0-4b94-a993-10fee44df75e.json
 !/defaultconfigs
 !/kubejs
 !/schematics
