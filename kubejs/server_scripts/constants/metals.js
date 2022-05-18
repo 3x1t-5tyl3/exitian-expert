@@ -1,11 +1,10 @@
 // priority: 0
-var filename = "constants/metals.js"
-
-console.info("Starting " + filename)
 
 /* 
 
 METAL TYPES BELOW
+
+Manually typed list of materials and their properties.. Idk why I torture myself.
 
 */
 
@@ -394,7 +393,3 @@ const allIngots = [{
         harvestLevel: 2
     }
 ]
-
-
-
-console.info("Finished " + filename)

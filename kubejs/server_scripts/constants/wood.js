@@ -1,7 +1,4 @@
 // priority: 0
-var filename = "constants/wood.js"
-
-console.info("Starting " + filename)
 
 /* 
 
@@ -66,8 +63,6 @@ const woodTypes = [
     'silentgear:netherwood'
 ]
 
-
-
 woodTypes.forEach((wood_type) => {
     var variant_Split = wood_type.split(":")
     var w_Suffix = ""
@@ -109,5 +104,3 @@ woodTypes.forEach((wood_type) => {
     };
     builtWoodTypes.push(woodType)
 })
-
-console.info("Finished " + filename)

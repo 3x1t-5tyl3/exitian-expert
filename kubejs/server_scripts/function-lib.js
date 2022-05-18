@@ -59,3 +59,14 @@ function remHideItem(input = "", itemToHide = "") {
     event.remove(toString(input))
     global.hiddenitems.push(itemToHide)
 }
+
+/* 
+
+Replace in and output for unification
+
+*/
+
+function rplinout(inputItem, unifyItem) {
+    event.replaceInput({}, inputItem, unifyItem)
+    event.replaceOutput({}, inputItem, unifyItem)
+}

@@ -1,7 +1,11 @@
 // priority: 0
 
-console.info('Hello, World! (You will see this line every time client resources reload)')
+/* 
+
+Not super concerned rn
+
+*/
 
 onEvent('jei.hide.items', event => {
-    hasRecipe(event)
+    hiddenitems = global.hiddenitems
 })
