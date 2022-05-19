@@ -52,17 +52,17 @@
 [battery]
 	#The chargers charging rate factor, which is applied to the charged items charge rate. 2 means it charges everything twice as fast. 0.5 half as fast.
 	#Range: 0.1 ~ 10.0
-	chargerChargeRate = 1.0
-	wirelessTerminal = 1600000
-	chargedStaff = 8000
-	entropyManipulator = 200000
-	portableCell = 20000
-	colorApplicator = 20000
-	matterCannon = 200000
+	chargerChargeRate = 2.0
+	wirelessTerminal = 3200000
+	chargedStaff = 16000
+	entropyManipulator = 400000
+	portableCell = 40000
+	colorApplicator = 40000
+	matterCannon = 400000
 
 [worldGen]
 	spawnPressesInMeteorites = true
-	generateQuartzOre = true
+	generateQuartzOre = false
 	quartzOresPerCluster = 7
 	quartzOresClusterAmount = 20
 	quartzOresBiomeBlacklist = []
@@ -78,7 +78,7 @@
 
 [PortableCells]
 	#Allow disassembly of portable cells into the recipe ingredients using shift+right-click
-	allowDisassembly = true
+	allowDisassembly = false
 
 	[PortableCells.PowerRatios]
 		ForgeEnergy = 0.5
@@ -87,7 +87,7 @@
 
 	[PortableCells.Condenser]
 		MatterBalls = 256
-		Singularity = 256000
+		Singularity = 512000
 
 	# Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.
 	[PortableCells.tickRates]

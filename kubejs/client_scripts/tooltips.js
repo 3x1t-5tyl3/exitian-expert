@@ -1,9 +1,4 @@
 // priority: 0
-var filename = "tooltips.js"
-console.info("Starting " + filename)
-
-
-
 onEvent('jei.hide.items', event => {
     // Hide items in JEI here
     // event.hide('minecraft:cobblestone')
@@ -36,14 +31,6 @@ function changeColorRBW() {
     }
 }
 
-onEvent('client.tick', event => {
-
-})
-
-onEvent("player.inventory.changed", event => {
-    enable
-})
-
 onEvent('item.tooltip', event => {
     event.addAdvanced("minecraft:diamond", (item, advanced, text) => {
         changeColorRBW()
@@ -65,5 +52,3 @@ onEvent('item.tooltip', event => {
         }
     })
 })
-
-console.info("Finished " + filename)
