@@ -35,11 +35,11 @@
 	#Whether mimicubes spawns should be restricted solely to the end city structure or to whatever biome is specified in their respective biome config.
 	mimicubeSpawnInEndCity = true
 	#Whether mimicream can be used to duplicate items.
-	mimicreamRepair = true
+	mimicreamRepair = false
 	#Blacklist for items that mimicream cannot make a copy of. Ex: "minecraft:stone_sword", "alexsmobs:blood_sprayer"
 	mimicreamBlacklist = ["alexsmobs:blood_sprayer", "alexsmobs:hemolymph_blaster"]
 	#Whether wild raccoons steal food from chests.
-	raccoonStealFromChests = true
+	raccoonStealFromChests = false
 	#Whether fish oil gives players a special levitation effect.
 	fishOilMeme = true
 	#Whether soul vulture spawns should be restricted solely to the nether fossil structure or to whatever biome is specified in their respective biome config.
@@ -98,7 +98,7 @@
 	#Whether the void worm boss is summonable or not, via the mysterious worm item.
 	voidWormSummonable = true
 	#Whether seagulls should steal food out of players' hotbar slots.
-	seagullStealing = true
+	seagullStealing = false
 	#List of items that seagulls cannot take from players.
 	seagullStealingBlacklist = []
 	#Whether the Clinging Potion effect should flip the screen. Warning: may cause nausea.
@@ -108,7 +108,7 @@
 	tusklinShoesBarteringChance = 0.02500000037252903
 	#The visual zoom of the rainbow pattern on the rainbow glass block. Higher number = bigger pattern.
 	#Range: 1.0 ~ 10000.0
-	rainbowGlassFidelity = 16.0
+	rainbowGlassFidelity = 32.0
 	#Whether Rabbits can transform into Bunfungus if fed Mungal spores.
 	bunfungusTransformation = true
 	#True if some Alex's Mobs items should spawn in loot chests.
