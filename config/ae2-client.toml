@@ -22,7 +22,7 @@
 		#Allowed Values: YES, NO, UNDECIDED
 		searchTooltips = "YES"
 		#Allowed Values: TALL, FULL, SMALL
-		terminalStyle = "TALL"
+		terminalStyle = "SMALL"
 		#Allowed Values: DEFAULT, REMEMBER_SEARCH, AUTO_FOCUS, AUTO_FOCUS_AND_REMEMBER_SEARCH, JEI, REI
-		terminalSearchMode = "DEFAULT"
+		terminalSearchMode = "JEI"
 
