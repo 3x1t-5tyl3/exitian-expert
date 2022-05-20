@@ -2,8 +2,7 @@
 
 onEvent("recipes", event => {
     builtWoodTypes.forEach((item) => {
-        event
-            .custom({
+        event.custom({
                 "type": "farmersdelight:cutting",
                 "ingredients": [{
                     "item": item.block_Log
