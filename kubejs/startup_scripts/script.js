@@ -2,7 +2,7 @@
 
 /* 
 
-Handled through "Laniakea" mod. I won't bother with global variables either. Seems like a waste of time to figure out.
+Handled through "Laniakea" mod. I won't bother with global variables either. Seems like a waste of time to figure out..
 
 */
 
