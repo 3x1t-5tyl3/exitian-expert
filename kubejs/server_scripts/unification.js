@@ -7,5 +7,5 @@ Unification script to ensure in and outputs are the same
 */
 
 onEvent("recipes", event => {
-    rplinout("#forge:sawdust", "mekanism:sawdust")
+    rplinout(event, "#forge:sawdust", "mekanism:sawdust")
 })

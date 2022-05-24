@@ -1,60 +1,118 @@
-// Shelfed for now. I'll figure it out at some point
+/* const modId = "laniakeaex"
 
-/* slot = ",Slot:"
-slots = []
-
-regex = /(?<={).*(?=})/g
-
-function getItemOfSlot(s, n) {
-    slot = s.indexOf(",Slot:", n)
-    endIndex = s.indexOf("\"}")
-    item = "t"
-    return item
-} */
-
-onEvent("block.right_click", event => {
+onEvent("block.left_click", event => {
+    heldItem = event.player.mainHandItem
+    heldItemName = heldItem.name
 
     recArr = [];
+    recArrLg = recArr.length;
+    arrayleg = 0;
+
+    giveWoodSword = `/give 3x1t_5tyl3 minecraft:wooden_sword{Damage:0,display:{Name:'[{"text":"recipe"}]'}}`
+
+    isRecipeMode = (event.hasGameStage("recipemode") && event.player.name == "3x1t_5tyl3")
 
 
+
+
+
+    // get the item and size
     invObj = event.block.getInventory("down");
     invSize = invObj.getSize();
 
+    if (isRecipeMode) {
+
+
+
+        switch (heldItemName) {
+            default:
+                event.player.tell("Not a proper recipe type.")
+            break;
+            case "shaped":
+                event.player.tell("shaped")
+                break;
+            case "shapeless":
+                event.player.tell("shapeless")
+                break;  
+        }
+    }
+    
+    // loop through it and slap it in the array for easy access
     for (let i = 0; i < invSize; i++) {
         item = invObj.get(i)
-        if (item == "Item.empty") {
-            event.player.tell("empty, not parsing..")
-        } else {
-            event.player.tell(item)
+        stringItem = item+""
+        recArr.push(stringItem)
+    }
+
+
+
+    // Loop through the given array and 
+    for (let i = 0; i < invSize; i++) {
+        item = invObj.get(i)
+        stringItem = item+""
+        if (stringItem != "Item.empty") {
+            arrayleg++
         }
     }
 
-    event.player.tell(recArr)
+    for (let i = 0; i < invSize; i++) {
+        item = invObj.get(i)
+        stringItem = item+""
+        recArr.push(stringItem)
+    }
 
-    if (item != null) {
-        if (event.hand == MAIN_HAND) {
-            switch (event.player.mainHandItem) {
-                case "forbidden_arcanus:draco_arcanus_arrow":
-                    event.player.tell("1")
-                    break;
-                case Item.of('minecraft:tipped_arrow', '{Potion:"minecraft:harming"}'):
-                    event.player.tell("2")
-                    break;
-                case Item.of('minecraft:tipped_arrow', '{Potion:"minecraft:healing"}'):
-                    event.player.tell("3")
-                default:
-                    break;
-            }
-        }
+    if (event.player.crouching) {
+        event.player.tell([
+            Text.of("Click ").color(0xafafaf),
+            Text.of("here").color(0xff9ec1).click(`copy:${template}`).hover(template),
+            Text.of(" to copy the recipe").color(0xafafaf)
+        ]);
     }
 })
 
 
+function shapedRecipe(array, outputItem) {
+    // yeah I hate this too; don't @ me
+    template = `event.shaped(` + outputItem + `,
+    ['ABC',
+     'DEF',
+     'GHI'],
+    {
+        A: `+ array[0] +`,
+        B: `+ array[1] +`,
+        C: `+ array[2] +`,
+        D: `+ array[3] +`,
+        E: `+ array[4] +`,
+        F: `+ array[5] +`,
+        G: `+ array[6] +`,
+        H: `+ array[7] +`,
+        I: `+ array[8] +`
+    }).id('`+modId+`:REPLACEME')`
 
+    return template
+}
 
+function shapelessRecipe(array, itemInput) {
+    // yeah I hate this too; don't @ me
+    template = `event.shapeless('${}, ['minecraft:stone', '#forge:dusts/glowstone'])`
 
+    template = `event.shaped(${itemInput},
+    ['ABC',
+     'DEF',
+     'GHI'],
+    {
+        A: ${array[0]},
+        B: ${array[1]},
+        C: ${array[2]},
+        D: ${array[3]},
+        E: ${array[4]},
+        F: ${array[5]},
+        G: ${array[6]},
+        H: ${array[7]},
+        I: ${array[8]}
+    }).id('${modId}:REPLACEME')`
 
-/* 
-container = event.level.getBlock(xyz)
-inventory = container.inventory
+    return template
+}
+
  */

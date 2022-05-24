@@ -11,9 +11,6 @@ let builtWoodTypes = [];
 const woodTypes = [
     'allyoucaneat:hazel',
     /// 'aquaculture:driftwood', not sure about this one, might do it manually.
-    /// 'ars_nouveau:archwood', adding this manually as it's not worth coding an exception for.
-    'botania:dreamwood',
-    'botania:livingwood',
     'byg:aspen',
     'byg:baobab',
     'byg:blue_enchanted',
@@ -58,8 +55,6 @@ const woodTypes = [
     'minecraft:spruce',
     'minecraft:warped',
     'naturesaura:ancient',
-    'quark:azalea',
-    'quark:blossom',
     'silentgear:netherwood'
 ]
 

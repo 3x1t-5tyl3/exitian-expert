@@ -1,72 +1,11 @@
-/* 
 
-Crafting table functions
-
-*/
-
-function ringRec(inputItem, outputItem) {
-    event.shaped(outputItem, [
-        "RRR",
-        "R R",
-        "RRR"
-    ], {
-        R: inputItem
-    })
-}
-
-function expGear(inputItem, inputItem2, outputItem) {
-    event.shaped(outputItem, [
-        "RIR",
-        "I I",
-        "RIR"
-    ], {
-        R: inputItem,
-        I: inputItem2
-    })
-}
-
-function expPlate(inputItem, outputItem) {
-    event.shaped(outputItem, [
-        " R ",
-        " R ",
-        " R "
-    ], {
-        R: inputItem
-    })
-}
-
-function cheapGear(inputItem, outputItem) {
-    event.recipes.immersiveengineeringMetalPress(output, inputItem, "i")
-}
-
-function expRod(inputItem, outputItem) {
-    event.shaped(outputItem, [
-        " R ",
-        " R ",
-        " R "
-    ], {
-        R: inputItem
-    })
-}
-
-/* 
-
-Remove and hide item
-
-*/
-
-function remHideItem(input = "", itemToHide = "") {
-    event.remove(toString(input))
-    global.hiddenitems.push(itemToHide)
-}
-
-/* 
-
-Replace in and output for unification
-
-*/
-
-function rplinout(inputItem, unifyItem) {
+/**
+ * Unifies recipe in and outputs with a singular item to make it less annoying.
+ * @param {event} event Pass the recipe event
+ * @param {string} inputItem Item to replace, accepts tags as-well
+ * @param {string} unifyItem item to unify towards.
+ */
+function rplinout(event, inputItem, unifyItem) {
     event.replaceInput({}, inputItem, unifyItem)
     event.replaceOutput({}, inputItem, unifyItem)
 }
