@@ -20,6 +20,14 @@
 		uranium = false
 		#Enable Zinc Worldgen(Overworld)
 		zinc = false
+		#Enable Iridium Worldgen(Overworld)
+		iridium = true
+		#Enable Ruby Worldgen(Overworld-Plains)
+		ruby = true
+		#Enable Sapphire Worldgen(Overworld-Ocean)
+		sapphire = true
+		#Enable Peridot Worldgen(Overworld-Desert)
+		peridot = true
 
 	[spawncontrol.nether]
 		#Enable Aluminum Worldgen(Nether)
@@ -40,6 +48,8 @@
 		uranium_nether = false
 		#Enable Zinc Worldgen(Nether)
 		zinc_nether = false
+		#Enable Iridium Worldgen(Nether)
+		iridium_nether = true
 
 	[spawncontrol.end]
 		#Enable Aluminum Worldgen(The End)
@@ -60,6 +70,8 @@
 		uranium_end = false
 		#Enable Zinc Worldgen(The End)
 		zinc_end = false
+		#Enable Iridium Worldgen(The End)
+		iridium_end = true
 
 [spawntuning]
 
@@ -188,4 +200,60 @@
 		#Uranium deposit count(number of veins)
 		#Range: 1 ~ 64
 		uranium_deposit_count = 20
+
+	[spawntuning.iridium]
+		#Iridium generates no lower than X blocks above world BOTTOM
+		#Range: -64 ~ 320
+		iridium_min_y = 5
+		#Iridium generates no higher than X blocks above world BOTTOM
+		#Range: 0 ~ 320
+		iridium_max_y = 69
+		#Iridium deposit size(number of ores)
+		#Range: 1 ~ 64
+		iridium_deposit_size = 2
+		#Iridium rarity, lower = more common
+		#Range: 1 ~ 64
+		iridium_deposit_count = 1
+
+	[spawntuning.ruby]
+		#Ruby generates no lower than
+		#Range: -64 ~ 320
+		ruby_min_y = -62
+		#Ruby generates no higher than
+		#Range: -64 ~ 320
+		ruby_max_y = 16
+		#Ruby deposit size(number of ores)
+		#Range: 1 ~ 64
+		ruby_deposit_size = 2
+		#Ruby deposit count(number of veins)
+		#Range: 1 ~ 64
+		ruby_deposit_count = 3
+
+	[spawntuning.sapphire]
+		#Sapphire generates no lower than
+		#Range: -64 ~ 320
+		sapphire_min_y = -62
+		#Sapphire generates no higher than
+		#Range: -64 ~ 320
+		sapphire_max_y = 16
+		#Sapphire deposit size(number of ores)
+		#Range: 1 ~ 64
+		sapphire_deposit_size = 2
+		#Sapphire deposit count(number of veins)
+		#Range: 1 ~ 64
+		sapphire_deposit_count = 3
+
+	[spawntuning.peridot]
+		#Peridot generates no lower than
+		#Range: -64 ~ 320
+		peridot_min_y = -62
+		#Peridot generates no higher than
+		#Range: -64 ~ 320
+		peridot_max_y = 16
+		#Peridot deposit size(number of ores)
+		#Range: 1 ~ 64
+		peridot_deposit_size = 2
+		#Peridot deposit count(number of veins)
+		#Range: 1 ~ 64
+		peridot_deposit_count = 3
 

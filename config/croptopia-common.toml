@@ -4,35 +4,111 @@ rightClickHarvest = true
 #Croptopia tree generation
 [worldGeneration]
 
-	#Settings for minecraft:flower_forest
-	[worldGeneration."minecraft:flower_forest"]
-		trees = ["star_fruit_tree_configured", "orange_tree_configured", "nectarine_tree_configured", "plum_tree_configured", "lemon_tree_configured", "cherry_tree_configured", "avocado_tree_configured", "lime_tree_configured", "apricot_tree_configured", "pear_tree_configured", "persimmon_tree_configured"]
+	#Settings for orange_tree_configured
+	[worldGeneration.orange_tree_configured]
+		biomes = ["byg:aspen_forest", "minecraft:plains", "byg:orchard", "minecraft:flower_forest", "byg:red_oak_forest", "minecraft:windswept_forest", "minecraft:sunflower_plains", "minecraft:forest"]
 
-	#Settings for minecraft:dark_forest
-	[worldGeneration."minecraft:dark_forest"]
-		trees = ["pecan_tree_configured", "walnut_tree_configured", "almond_tree_configured", "cashew_tree_configured"]
+	#Settings for dragon_fruit_tree_configured
+	[worldGeneration.dragon_fruit_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
 
-	#Settings for minecraft:forest
-	[worldGeneration."minecraft:forest"]
-		trees = ["star_fruit_tree_configured", "orange_tree_configured", "nectarine_tree_configured", "plum_tree_configured", "lemon_tree_configured", "cherry_tree_configured", "avocado_tree_configured", "lime_tree_configured", "apricot_tree_configured", "pear_tree_configured", "persimmon_tree_configured"]
+	#Settings for kumquat_tree_configured
+	[worldGeneration.kumquat_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
 
-	#Settings for minecraft:sparse_jungle
-	[worldGeneration."minecraft:sparse_jungle"]
-		trees = ["date_tree_configured", "dragon_fruit_tree_configured", "fig_tree_configured", "cinnamon_tree_configured", "kumquat_tree_configured", "banana_tree_configured", "mango_tree_configured", "coconut_tree_configured", "nutmeg_tree_configured", "grapefruit_tree_configured"]
+	#Settings for banana_tree_configured
+	[worldGeneration.banana_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
 
-	#Settings for minecraft:windswept_forest
-	[worldGeneration."minecraft:windswept_forest"]
-		trees = ["star_fruit_tree_configured", "orange_tree_configured", "nectarine_tree_configured", "plum_tree_configured", "lemon_tree_configured", "cherry_tree_configured", "avocado_tree_configured", "lime_tree_configured", "apricot_tree_configured", "pear_tree_configured", "persimmon_tree_configured"]
+	#Settings for plum_tree_configured
+	[worldGeneration.plum_tree_configured]
+		biomes = ["byg:autumnal_taiga", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "byg:autumnal_forest", "byg:jacaranda_forest", "byg:red_oak_forest", "minecraft:windswept_forest", "minecraft:forest"]
 
-	#Settings for minecraft:jungle
-	[worldGeneration."minecraft:jungle"]
-		trees = ["date_tree_configured", "dragon_fruit_tree_configured", "fig_tree_configured", "cinnamon_tree_configured", "kumquat_tree_configured", "banana_tree_configured", "mango_tree_configured", "coconut_tree_configured", "nutmeg_tree_configured", "grapefruit_tree_configured"]
+	#Settings for date_tree_configured
+	[worldGeneration.date_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
 
-	#Settings for minecraft:sunflower_plains
-	[worldGeneration."minecraft:sunflower_plains"]
-		trees = ["orange_tree_configured", "apple_tree_configured", "peach_tree_configured"]
+	#Settings for cashew_tree_configured
+	[worldGeneration.cashew_tree_configured]
+		biomes = ["byg:twilight_meadow", "byg:ebony_woods", "minecraft:dark_forest", "byg:maple_taiga", "byg:dacite_ridges", "byg:weeping_witch_forest"]
 
-	#Settings for minecraft:plains
-	[worldGeneration."minecraft:plains"]
-		trees = ["orange_tree_configured", "apple_tree_configured", "peach_tree_configured"]
+	#Settings for mango_tree_configured
+	[worldGeneration.mango_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
+
+	#Settings for coconut_tree_configured
+	[worldGeneration.coconut_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
+
+	#Settings for apricot_tree_configured
+	[worldGeneration.apricot_tree_configured]
+		biomes = ["byg:red_oak_forest", "minecraft:windswept_forest", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "minecraft:forest"]
+
+	#Settings for nutmeg_tree_configured
+	[worldGeneration.nutmeg_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
+
+	#Settings for persimmon_tree_configured
+	[worldGeneration.persimmon_tree_configured]
+		biomes = ["byg:autumnal_taiga", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "byg:autumnal_forest", "byg:jacaranda_forest", "byg:red_oak_forest", "minecraft:windswept_forest", "minecraft:forest"]
+
+	#Settings for almond_tree_configured
+	[worldGeneration.almond_tree_configured]
+		biomes = ["byg:twilight_meadow", "byg:ebony_woods", "minecraft:dark_forest", "byg:maple_taiga", "byg:dacite_ridges", "byg:weeping_witch_forest"]
+
+	#Settings for avocado_tree_configured
+	[worldGeneration.avocado_tree_configured]
+		biomes = ["byg:red_oak_forest", "minecraft:windswept_forest", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "minecraft:forest"]
+
+	#Settings for fig_tree_configured
+	[worldGeneration.fig_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
+
+	#Settings for cinnamon_tree_configured
+	[worldGeneration.cinnamon_tree_configured]
+		biomes = ["byg:cypress_swamplands", "byg:temperate_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands", "byg:white_mangrove_marshes", "minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest"]
+
+	#Settings for peach_tree_configured
+	[worldGeneration.peach_tree_configured]
+		biomes = ["minecraft:sunflower_plains", "minecraft:plains"]
+
+	#Settings for apple_tree_configured
+	[worldGeneration.apple_tree_configured]
+		biomes = ["minecraft:sunflower_plains", "byg:prairie", "minecraft:plains"]
+
+	#Settings for pear_tree_configured
+	[worldGeneration.pear_tree_configured]
+		biomes = ["byg:autumnal_taiga", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "byg:autumnal_forest", "byg:jacaranda_forest", "byg:red_oak_forest", "minecraft:windswept_forest", "minecraft:forest"]
+
+	#Settings for grapefruit_tree_configured
+	[worldGeneration.grapefruit_tree_configured]
+		biomes = ["minecraft:jungle", "byg:crag_gardens", "byg:tropical_rainforest", "minecraft:sparse_jungle", "byg:tropical_islands"]
+
+	#Settings for star_fruit_tree_configured
+	[worldGeneration.star_fruit_tree_configured]
+		biomes = ["byg:red_oak_forest", "minecraft:windswept_forest", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "minecraft:forest"]
+
+	#Settings for nectarine_tree_configured
+	[worldGeneration.nectarine_tree_configured]
+		biomes = ["byg:red_oak_forest", "minecraft:windswept_forest", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "minecraft:forest"]
+
+	#Settings for lemon_tree_configured
+	[worldGeneration.lemon_tree_configured]
+		biomes = ["byg:red_oak_forest", "minecraft:windswept_forest", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "minecraft:forest"]
+
+	#Settings for cherry_tree_configured
+	[worldGeneration.cherry_tree_configured]
+		biomes = ["byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "byg:red_oak_forest", "minecraft:windswept_forest", "byg:cherry_blossom_forest", "minecraft:forest"]
+
+	#Settings for lime_tree_configured
+	[worldGeneration.lime_tree_configured]
+		biomes = ["byg:red_oak_forest", "minecraft:windswept_forest", "byg:aspen_forest", "byg:orchard", "minecraft:flower_forest", "minecraft:forest"]
+
+	#Settings for pecan_tree_configured
+	[worldGeneration.pecan_tree_configured]
+		biomes = ["byg:twilight_meadow", "byg:ebony_woods", "minecraft:dark_forest", "byg:maple_taiga", "byg:dacite_ridges", "byg:weeping_witch_forest"]
+
+	#Settings for walnut_tree_configured
+	[worldGeneration.walnut_tree_configured]
+		biomes = ["byg:twilight_meadow", "byg:ebony_woods", "minecraft:dark_forest", "byg:maple_taiga", "byg:dacite_ridges", "byg:weeping_witch_forest"]
 

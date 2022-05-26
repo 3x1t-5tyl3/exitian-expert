@@ -38,7 +38,6 @@ function getIngredients(inputInventory, inputInventorySize, recipeOffset, ignore
     offsetMp = 3
     totalOffset = offsetMp * recipeOffset
     recipeSet = [];
-    matrixRowOffset = 0
 
     for (let i = 0; i < RECIPE_SET.length; i++) {
         setItem = RECIPE_SET[i]
@@ -90,7 +89,6 @@ function genItemMap(inputArray) {
             }
             itemMap.set(key, crrItem)
         }
-
     }
     return itemMap
 }
@@ -114,8 +112,8 @@ function genItemMatrix(inputMap, inputArray) {
         keyAdd = "";
 
         if ((counter == 2) || (counter == 5)) {
-            comma = ",\n"
-
+            comma = `,
+`
         }
 
         switch (counter % 3) {
@@ -128,16 +126,15 @@ function genItemMatrix(inputMap, inputArray) {
             case 2:
                 keyAdd = `${key}'${comma}`
                 break;
-
         }
         counter++
-
         matrix += keyAdd
-
-
-
     }
     return matrix
+}
+
+function generateLegend(map) {
+
 }
 
 /**
