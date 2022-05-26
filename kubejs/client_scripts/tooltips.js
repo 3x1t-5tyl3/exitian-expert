@@ -32,9 +32,9 @@ function changeColorRBW() {
 }
 
 onEvent('item.tooltip', event => {
-    event.addAdvanced("minecraft:diamond", (item, advanced, text) => {
+    event.addAdvanced("minecraft:stick", (item, advanced, text) => {
         changeColorRBW()
-        text.set(0, [Text.of("Diamond").color(changingColor)])
+        text.set(0, [Text.of("Stick").color(changingColor)])
         if (event.isShift()) {
             shiftToolTip = true
         } else {

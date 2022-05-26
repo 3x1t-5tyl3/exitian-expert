@@ -3,7 +3,7 @@
  * @param {string} inputItem ingredient
  * @param {string} outputItem what this recipe creates
  */
- function ringRec(inputItem, outputItem) {
+function ringRec(inputItem, outputItem) {
     event.shaped(outputItem, [
         "RRR",
         "R R",
@@ -59,3 +59,4 @@ function expRod(inputItem, outputItem) {
         R: inputItem
     })
 }
+
