@@ -1,13 +1,26 @@
 
 /**
- * Generates copyable recipe-text.
- * @param {event} event Pass the event to the function
- * @param {string} recipeType Shows the type of recipe in the output
- * @param {string} recipeOutput The recipe output string used by KubeJS
- * @param {number} [accColor=ACC_COLOR] Default is defined by the constant
- * @param {number} [defColor=DEF_COLOR] Default is defined by the constant
+ * Get the key for a value in the map
+ * @param {Map} map The map to search in
+ * @param {String} searchValue The value to search for
+ * @returns the key of the map
  */
-function copyRecipeText(event, recipeType, recipeOutput, accColor, defColor) {
+function getKeyByValue(map, searchValue) {
+    for (let [key, value] of map.entries()) {
+        if (value === searchValue)
+            return key;
+    }
+}
+
+/**
+ * 
+ * @param {String} event pass the event
+ * @param {String} recipeType what type of recipe
+ * @param {String} copytext the text that's copied
+ * @param {Number} accColor accent color (optional)
+ * @param {Number} defColor default text color (optional)
+ */
+function chatRecipe(event, recipeType, copytext, accColor, defColor) {
 
     if (accColor == undefined || accColor == null) {
         accColor = ACC_COLOR
@@ -17,9 +30,9 @@ function copyRecipeText(event, recipeType, recipeOutput, accColor, defColor) {
         defColor = DEF_COLOR
     }
 
-    return event.player.tell([
+    event.player.tell([
         Text.of("Click ").color(defColor),
-        Text.of("[HERE]").color(accColor).click(`copy:${recipeOutput}`).hover(recipeType),
+        Text.of("[HERE]").color(accColor).click("copy:" + copytext).hover(recipeType),
         Text.of(" to copy the recipe!").color(defColor)
     ])
 }
@@ -34,10 +47,11 @@ function copyRecipeText(event, recipeType, recipeOutput, accColor, defColor) {
  * @returns {String[]} Returns the array of ingredients and the recipe output.
  */
 function getIngredients(inputInventory, inputInventorySize, recipeOffset, ignoreLastRows) {
-    itemArray = [];
-    offsetMp = 3
-    totalOffset = offsetMp * recipeOffset
-    recipeSet = [];
+    let itemArray = [];
+    let offsetMp = 3
+    let totalOffset = offsetMp * recipeOffset
+    let recipeSet = [];
+    let recipeTypeItem, outCount, outputItem, bool
 
     for (let i = 0; i < RECIPE_SET.length; i++) {
         setItem = RECIPE_SET[i]
@@ -57,14 +71,29 @@ function getIngredients(inputInventory, inputInventorySize, recipeOffset, ignore
 
     for (let i = 0; i < inputInventorySize; i++) {
         if (recipeSet.includes(i)) {
-            item = inputInventory.get(i)
-            itemArray.push(item + "")
+            switch (i) {
+                default:
+                    item = inputInventory.get(i)
+                    itemArray.push(item + "")
+                    break;
+                case (36 + totalOffset):
+                    recipeTypeItem = inputInventory.get(i) + ""
+                    break;
+                case (37 + totalOffset):
+                    outputItem = inputInventory.get(i)
+                    break;
+            }
         }
     }
 
-    return itemArray
-}
+    if (recipeTypeItem != "Item.empty" || recipeTypeItem == null || recipeTypeItem == undefined) {
+        bool = false
+    } else {
+        bool = true
+    }
 
+    return [itemArray, bool, outputItem]
+}
 
 
 /**
@@ -95,25 +124,24 @@ function genItemMap(inputArray) {
 
 
 /**
- * 
+ * Generates a 3x3 matrix of a single letter
  * @param {Map} inputMap The input map from genItemMap @see genItemMap
  * @param {String[]} inputArray The array of items from the server.
  * @returns a legend-matrix for use in the final string
  */
 function genItemMatrix(inputMap, inputArray) {
-    let matrix = ""
-    counter = 0;
+    let matrix = "";
+    let counter = 0;
     for (let i = 0; i < inputArray.length; i++) {
         item = inputArray[i]
         let key;
 
         key = getKeyByValue(inputMap, item)
-        comma = ""
+        comma = "";
         keyAdd = "";
 
         if ((counter == 2) || (counter == 5)) {
-            comma = `,
-`
+            comma = `,\n`
         }
 
         switch (counter % 3) {
@@ -133,19 +161,44 @@ function genItemMatrix(inputMap, inputArray) {
     return matrix
 }
 
-function generateLegend(map) {
 
+/**
+ * Creates a legend for the shaped recipe.
+ * @param {Map} map input map
+ * @returns {String[]} array 
+ */
+function recipeLegend(map) {
+    let array = new Array
+    for (let [k, v] of map.entries()) {
+        crrLegen = `${k}: ${v}`
+        array.push(crrLegen)
+    }
+    return array
+}
+
+
+
+/**
+ * @param {String} matrix The matrix input
+ * @param {String} legend The key/value pair legend
+ * @param {String} output output item
+ * @returns A copyable string to slap back into KJS
+ */
+function genShapedRecipeString(matrix, legend, output) {
+    return `event.shaped(${output}, [
+        ${matrix}
+      ], {
+        ${legend}
+      })`
 }
 
 /**
- * Get the key for a value in the map
- * @param {Map} map The map to search in
- * @param {String} searchValue The value to search for
- * @returns the key of the map
+ * @param {String[]} array Array of items
+ * @param {String} output output item
+ * @returns A copyable string to slap back into KJS
  */
-function getKeyByValue(map, searchValue) {
-    for (let [key, value] of map.entries()) {
-        if (value === searchValue)
-            return key;
-    }
+function genShapelessRecipeString(array, output) {
+    template = `event.shapeless(${output}, [${array}])`
+    return template.replace(/\n/g, "")
 }
+
