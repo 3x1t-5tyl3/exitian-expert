@@ -1,3 +1,25 @@
+/**
+ * How to use it:
+ * be in creative, with a wooden sword and left click a diamond chest. I only tested it with that one. That's what my pack uses. Don't @ me about it.
+ * The recipe has to be laid out like this in the chest
+ * This requies a 12 x 4 (at the minimum) chest. Any other size will NOT work.
+ *  
+ * "xxx""xxx""xxx""xxx"
+ * "xxx""xxx""xxx""xxx"
+ * "xxx""xxx""xxx""xxx"
+ * "yz0""yz0""yz0""yz0"
+ * 
+ * x = any input item (incl nbt)
+ * y = if there's an item in that spot the recipe is shapeless else it's shaped
+ * 0 = nothing youc an ignore this slot.
+ * 
+ * you'll get 4 outputs in your chat, top to bottom = left to right in the chest.
+ * If you have questions ask on my discord: https://mc.exitian.ch/discord or on my website top left corner https://exitian.ch
+ * 
+ * This thing also breaks at times and spits out 8 instead of 4 lines.. just read the code if you need help.
+ */
+
+
 let fireonce = true;
 
 onEvent("block.left_click", event => {

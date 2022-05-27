@@ -22,8 +22,3 @@ const DEF_COLOR = 0xafafaf
  * @constant ACC_COLOR (HEX) any accent colour, it really doesn't matter.
  */
 const ACC_COLOR = 0xff9ec1
-
-/**
- * @constant RECIPE_CONTAINER any 12 by 4 container, hardcoded mainly due to limitations.
- */
-const RECIPE_CONTAINER = "ironchests:diamond_chest"
